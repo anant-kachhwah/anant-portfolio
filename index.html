@@ -1,0 +1,2688 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anant Vikram Singh - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&amp;family=Inter:wght@400&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-low": "#1e1b1a",
+                "background": "#151312",
+                "on-error-container": "#ffdad6",
+                "on-surface-muted": "#94A3B8",
+                "on-secondary-container": "#d4aca0",
+                "on-error": "#690005",
+                "on-background": "#e8e1df",
+                "surface-container-high": "#2d2929",
+                "primary-container": "#3e2723",
+                "on-primary": "#422a26",
+                "on-primary-fixed": "#2b1613",
+                "on-primary-container": "#ae8d87",
+                "on-secondary-fixed": "#2c160e",
+                "surface-variant": "#383433",
+                "tertiary-fixed": "#d0e8de",
+                "inverse-on-surface": "#33302f",
+                "primary-fixed": "#ffdad4",
+                "surface-charcoal": "#051424",
+                "error": "#ffb4ab",
+                "surface": "#151312",
+                "inverse-surface": "#e8e1df",
+                "on-tertiary-container": "#839991",
+                "inverse-primary": "#745853",
+                "on-tertiary-fixed": "#0b1f1a",
+                "outline-variant": "#504442",
+                "on-secondary-fixed-variant": "#5d4037",
+                "tertiary-fixed-dim": "#b5ccc3",
+                "on-tertiary": "#20342e",
+                "on-primary-fixed-variant": "#5b403c",
+                "on-surface": "#e8e1df",
+                "surface-tint": "#e3beb8",
+                "surface-container-lowest": "#100e0d",
+                "secondary-fixed": "#ffdbd0",
+                "on-secondary": "#442a22",
+                "error-container": "#93000a",
+                "secondary": "#e7bdb1",
+                "espresso-glow": "rgba(62, 39, 35, 0.3)",
+                "primary": "#e3beb8",
+                "on-surface-variant": "#d3c3c0",
+                "tertiary": "#b5ccc3",
+                "secondary-container": "#5d4037",
+                "surface-dim": "#151312",
+                "surface-bright": "#3c3838",
+                "surface-container-highest": "#383433",
+                "surface-container": "#221f1e",
+                "primary-fixed-dim": "#e3beb8",
+                "on-tertiary-fixed-variant": "#364b44",
+                "tertiary-container": "#1d312b",
+                "outline": "#9c8d8b",
+                "secondary-fixed-dim": "#e7bdb1"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "stack-lg": "64px",
+                "stack-md": "24px",
+                "base": "4px",
+                "gutter": "24px",
+                "container-max": "1200px",
+                "section-padding": "120px",
+                "stack-sm": "8px"
+        },
+        "fontFamily": {
+                "label-caps": [
+                        "Geist"
+                ],
+                "display-lg": [
+                        "Geist"
+                ],
+                "display-lg-mobile": [
+                        "Geist"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Geist"
+                ],
+                "code-sm": [
+                        "JetBrains Mono"
+                ]
+        },
+        "fontSize": {
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.04em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-lg-mobile": [
+                        "40px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "code-sm": [
+                        "14px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #151312; /* Dark charcoal base as per guidance */
+            color: #e8e1df; /* on-surface */
+        }
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #100e0d; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #383433; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #504442; 
+        }
+        
+        .glass-panel {
+            background: rgba(21, 19, 18, 0.6); /* background */
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(156, 141, 139, 0.1); /* outline */
+        }
+        
+        .glow-effect:hover {
+            box-shadow: inset 0 0 40px rgba(227, 190, 184, 0.15); /* primary */
+            border-color: rgba(227, 190, 184, 0.5);
+        }
+        
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg, #e8e1df, #e3beb8);
+        }
+        
+        .nav-active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #e3beb8;
+            border-radius: 2px;
+        }
+        
+        /* Breathing animation for status dot */
+        @keyframes breathe {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+        .status-dot {
+            animation: breathe 3s ease-in-out infinite;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Ambient glow orbs in background */
+        .ambient-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            pointer-events: none;
+            opacity: 0.16;
+            mix-blend-mode: screen;
+        }
+        .ambient-glow-1 {
+            width: 600px;
+            height: 600px;
+            top: -10%;
+            right: -5%;
+            background: radial-gradient(circle, rgba(227, 190, 184, 0.25) 0%, rgba(62, 39, 35, 0.15) 50%, transparent 70%);
+            animation: driftGlow1 22s ease-in-out infinite alternate;
+        }
+        .ambient-glow-2 {
+            width: 700px;
+            height: 700px;
+            top: 40%;
+            left: -15%;
+            background: radial-gradient(circle, rgba(227, 190, 184, 0.18) 0%, rgba(56, 52, 51, 0.12) 60%, transparent 75%);
+            animation: driftGlow2 28s ease-in-out infinite alternate;
+        }
+        .ambient-glow-3 {
+            width: 650px;
+            height: 650px;
+            bottom: -5%;
+            right: 10%;
+            background: radial-gradient(circle, rgba(227, 190, 184, 0.2) 0%, rgba(62, 39, 35, 0.15) 55%, transparent 70%);
+            animation: driftGlow3 24s ease-in-out infinite alternate;
+        }
+        @keyframes driftGlow1 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(-80px, 60px) scale(1.1); }
+        }
+        @keyframes driftGlow2 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(70px, -50px) scale(1.15); }
+        }
+        @keyframes driftGlow3 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(-60px, -40px) scale(1.08); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .ambient-glow {
+                animation: none !important;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col overflow-x-hidden relative">
+<!-- Ambient Canvas & Background Layer -->
+<div id="bg-canvas-container" class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
+    <!-- Ambient Radial Glow Spots -->
+    <div class="ambient-glow ambient-glow-1"></div>
+    <div class="ambient-glow ambient-glow-2"></div>
+    <div class="ambient-glow ambient-glow-3"></div>
+    
+    <!-- Animated Particle, Constellation & Wave Canvas -->
+    <canvas id="bg-canvas" class="w-full h-full block"></canvas>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<!-- Leading Icon / Brand Logo -->
+<a href="#home" class="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity" aria-label="Go to Home">
+<span class="material-symbols-outlined text-primary dark:text-primary">terminal</span>
+<span class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface dark:text-on-surface">AVS.DEV</span>
+</a>
+<!-- Desktop Navigation -->
+<nav id="desktop-nav" class="hidden md:flex items-center gap-8 font-label-caps text-label-caps">
+<a class="relative text-primary font-bold nav-active hover:text-primary transition-colors py-1" href="#home">HOME</a>
+<a class="relative text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#about">ABOUT</a>
+<a class="relative text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#skills">SKILLS</a>
+<a class="relative text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#projects">PROJECTS</a>
+<a class="relative text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#certifications">CERTIFICATIONS</a>
+<a class="relative text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#contact">CONTACT</a>
+</nav>
+<!-- Trailing Icon (Mobile Menu) -->
+<button class="md:hidden p-2 rounded-full hover:bg-surface-variant/20 transition-all duration-300 active:scale-95 text-on-surface-variant hover:text-on-surface cursor-pointer" id="mobile-menu-btn" aria-label="Open Navigation Menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Mobile Navigation Drawer (Overlay) -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col p-6 bg-surface-container-lowest dark:bg-surface-container-lowest rounded-r-xl h-full w-80 border-r border-outline-variant/10 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden" id="mobile-drawer">
+<!-- Drawer Header -->
+<div class="flex justify-between items-start mb-8">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary mb-2">Anant Vikram Singh</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">B.Tech CSE Student</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary status-dot"></span> Available for Work
+                </span>
+</div>
+<button class="p-2 -mr-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 rounded-full transition-all cursor-pointer" id="close-drawer-btn" aria-label="Close Navigation Menu">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Drawer Links -->
+<nav class="flex flex-col gap-2 font-body-md text-body-md">
+<a class="flex items-center gap-3 px-4 py-3 bg-primary-container text-on-primary-container rounded-full transition-all duration-200 ease-in-out" href="#home">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span> Home
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:bg-primary/10 rounded-full transition-all duration-200 ease-in-out" href="#about">
+<span class="material-symbols-outlined">person</span> About
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:bg-primary/10 rounded-full transition-all duration-200 ease-in-out" href="#skills">
+<span class="material-symbols-outlined">code</span> Skills
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:bg-primary/10 rounded-full transition-all duration-200 ease-in-out" href="#projects">
+<span class="material-symbols-outlined">rocket_launch</span> Projects
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:bg-primary/10 rounded-full transition-all duration-200 ease-in-out" href="#certifications">
+<span class="material-symbols-outlined">workspace_premium</span> Certifications
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant/50 hover:bg-primary/10 rounded-full transition-all duration-200 ease-in-out" href="#contact">
+<span class="material-symbols-outlined">mail</span> Contact
+            </a>
+</nav>
+</div>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-24 pb-section-padding">
+<!-- Hero Section -->
+<section class="relative min-h-[580px] md:min-h-[700px] flex items-center px-gutter max-w-container-max mx-auto mb-stack-lg scroll-mt-24" id="home">
+<div class="relative z-10 max-w-3xl flex flex-col gap-6">
+<!-- Profile Photo -->
+<img src="assets/images/profile picture.jpeg" alt="Anant Vikram Singh" class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border border-outline-variant/30 shadow-lg"/>
+<!-- Status Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-outline-variant/30 bg-surface-container-low/50 backdrop-blur-sm w-fit">
+<span class="w-2 h-2 rounded-full bg-primary status-dot"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Currently learning &amp; building</span>
+</div>
+<div class="flex flex-col gap-2">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface tracking-tighter">
+                        Hi, I'm <br class="md:hidden"/><span class="text-gradient">Anant Vikram Singh.</span>
+</h1>
+<h2 class="font-headline-md text-headline-md text-primary-fixed-dim font-medium mt-2">
+                        B.Tech CSE Student | Aspiring Software Engineer
+                    </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mt-2">
+                    I am a B.Tech Computer Science and Engineering student passionate about programming, problem solving, Data Structures & Algorithms, and software development. I enjoy learning new technologies, building practical projects, and exploring the world of sports as a sports enthusiast.
+                </p>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row gap-4 mt-6">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-on-primary rounded-lg font-label-caps text-label-caps hover:bg-primary-fixed transition-colors active:scale-95 shadow-sm" href="#projects">
+                        View My Projects
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-outline-variant/50 text-on-surface hover:border-on-surface hover:bg-surface-variant/20 rounded-lg font-label-caps text-label-caps transition-all active:scale-95" href="#contact">
+                        Download Resume
+                        <span class="material-symbols-outlined text-sm">download</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- About Me Section -->
+<section class="px-gutter max-w-container-max mx-auto mb-stack-lg scroll-mt-24" id="about">
+    <h2 class="font-headline-md text-headline-md tracking-tighter mb-8"><span class="text-gradient">About Me</span></h2>
+    
+    <!-- Timeline Container (Initially hidden for Scroll Reveal Animation) -->
+    <div class="timeline-container opacity-0 translate-y-8 transition-all duration-700 ease-out flex flex-col gap-8">
+        
+        <!-- Horizontal Timeline (Desktop/Tablet) -->
+        <div class="hidden sm:block relative w-full max-w-3xl mx-auto mb-6 select-none">
+            <!-- Track Background -->
+            <div class="absolute top-5 left-10 right-10 h-[2px] bg-outline-variant/20 -translate-y-1/2">
+                <!-- Track Progress -->
+                <div id="timeline-progress" class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary transition-all duration-500 ease-out" style="width: 0%;"></div>
+            </div>
+            
+            <!-- Milestone Buttons -->
+            <div class="relative flex justify-between items-center w-full z-10">
+                <!-- Student -->
+                <button class="milestone-btn flex flex-col items-center gap-3 cursor-pointer group focus:outline-none w-20" data-index="0">
+                    <div class="milestone-dot w-10 h-10 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center transition-all duration-300 group-hover:border-primary/60 group-hover:scale-105 active:scale-95 shadow-lg shadow-black/20">
+                        <span class="text-lg">🎓</span>
+                    </div>
+                    <span class="font-label-caps text-label-caps text-on-surface-variant transition-colors group-hover:text-on-surface">Student</span>
+                </button>
+                <!-- Developer -->
+                <button class="milestone-btn flex flex-col items-center gap-3 cursor-pointer group focus:outline-none w-20" data-index="1">
+                    <div class="milestone-dot w-10 h-10 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center transition-all duration-300 group-hover:border-primary/60 group-hover:scale-105 active:scale-95 shadow-lg shadow-black/20">
+                        <span class="text-lg">💻</span>
+                    </div>
+                    <span class="font-label-caps text-label-caps text-on-surface-variant transition-colors group-hover:text-on-surface">Developer</span>
+                </button>
+                <!-- Sports -->
+                <button class="milestone-btn flex flex-col items-center gap-3 cursor-pointer group focus:outline-none w-20" data-index="2">
+                    <div class="milestone-dot w-10 h-10 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center transition-all duration-300 group-hover:border-primary/60 group-hover:scale-105 active:scale-95 shadow-lg shadow-black/20">
+                        <span class="text-lg">🏏</span>
+                    </div>
+                    <span class="font-label-caps text-label-caps text-on-surface-variant transition-colors group-hover:text-on-surface">Sports</span>
+                </button>
+                <!-- Creative -->
+                <button class="milestone-btn flex flex-col items-center gap-3 cursor-pointer group focus:outline-none w-20" data-index="3">
+                    <div class="milestone-dot w-10 h-10 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center transition-all duration-300 group-hover:border-primary/60 group-hover:scale-105 active:scale-95 shadow-lg shadow-black/20">
+                        <span class="text-lg">✏️</span>
+                    </div>
+                    <span class="font-label-caps text-label-caps text-on-surface-variant transition-colors group-hover:text-on-surface">Creative</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Vertical Timeline (Mobile only) -->
+        <div class="sm:hidden flex flex-col relative pl-12 gap-8 mb-4 select-none">
+            <!-- Track Background -->
+            <div class="absolute left-5 top-4 bottom-4 w-[2px] bg-outline-variant/20">
+                <!-- Track Progress -->
+                <div id="vertical-timeline-progress" class="absolute top-0 left-0 w-full bg-primary transition-all duration-500 ease-out" style="height: 0%;"></div>
+            </div>
+            
+            <!-- Milestone Buttons -->
+            <button class="milestone-mobile-btn relative flex items-center gap-4 text-left cursor-pointer focus:outline-none" data-index="0">
+                <div class="mobile-dot w-10 h-10 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center transition-all duration-300 z-10 shadow-lg shadow-black/20">
+                    <span class="text-base">🎓</span>
+                </div>
+                <div>
+                    <span class="font-label-caps text-label-caps text-on-surface-variant mobile-label">Student</span>
+                </div>
+            </button>
+            <button class="milestone-mobile-btn relative flex items-center gap-4 text-left cursor-pointer focus:outline-none" data-index="1">
+                <div class="mobile-dot w-10 h-10 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center transition-all duration-300 z-10 shadow-lg shadow-black/20">
+                    <span class="text-base">💻</span>
+                </div>
+                <div>
+                    <span class="font-label-caps text-label-caps text-on-surface-variant mobile-label">Developer</span>
+                </div>
+            </button>
+            <button class="milestone-mobile-btn relative flex items-center gap-4 text-left cursor-pointer focus:outline-none" data-index="2">
+                <div class="mobile-dot w-10 h-10 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center transition-all duration-300 z-10 shadow-lg shadow-black/20">
+                    <span class="text-base">🏏</span>
+                </div>
+                <div>
+                    <span class="font-label-caps text-label-caps text-on-surface-variant mobile-label">Sports</span>
+                </div>
+            </button>
+            <button class="milestone-mobile-btn relative flex items-center gap-4 text-left cursor-pointer focus:outline-none" data-index="3">
+                <div class="mobile-dot w-10 h-10 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center transition-all duration-300 z-10 shadow-lg shadow-black/20">
+                    <span class="text-base">✏️</span>
+                </div>
+                <div>
+                    <span class="font-label-caps text-label-caps text-on-surface-variant mobile-label">Creative</span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Glassmorphic Content Card -->
+        <div id="about-content-card" class="opacity-0 translate-y-8 transition-all duration-700 ease-out glass-panel rounded-2xl p-6 md:p-8 min-h-[260px] relative overflow-hidden shadow-xl shadow-black/10">
+            <!-- Ambient Espresso Glow -->
+            <div class="absolute -right-16 -top-16 w-48 h-48 rounded-full bg-primary/5 blur-[80px] pointer-events-none"></div>
+            <div class="absolute -left-16 -bottom-16 w-48 h-48 rounded-full bg-secondary/5 blur-[80px] pointer-events-none"></div>
+            
+            <!-- Content Wrapper (Fades/Slides when index changes) -->
+            <div id="about-content-wrapper" class="flex flex-col md:flex-row gap-6 md:gap-8 items-start transition-all duration-300 opacity-100 transform translate-y-0">
+                <!-- Left Visual Icon Container -->
+                <div class="flex-shrink-0 w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-3xl shadow-inner shadow-primary/5 select-none">
+                    <span id="about-active-icon">🎓</span>
+                </div>
+                
+                <!-- Right Text Content -->
+                <div class="flex-col flex gap-4 flex-grow w-full">
+                    <h3 id="about-active-title" class="font-headline-md text-xl text-primary font-semibold tracking-tight">Student</h3>
+                    <p id="about-active-text" class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        <!-- Populated by JS -->
+                    </p>
+                    
+                    <!-- Dynamic Highlight Tags -->
+                    <div id="about-active-highlights" class="flex flex-wrap gap-2.5 mt-2">
+                        <!-- Populated by JS -->
+                    </div>
+                    
+                    <!-- View Sketches Trigger Button -->
+                    <div id="sketch-btn-container" class="mt-4 hidden transition-opacity duration-300 opacity-0">
+                        <button id="view-sketches-btn" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps hover:bg-primary-fixed-dim hover:shadow-lg hover:shadow-primary/10 active:scale-95 transition-all cursor-pointer">
+                            <span>View My Sketches</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Social Links Row -->
+<div class="flex justify-center items-center gap-6 mb-stack-lg">
+    <a aria-label="GitHub" class="text-on-surface-variant hover:text-primary transition-colors p-2" href="https://github.com/anant-kachhwah" target="_blank" rel="noopener noreferrer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+        </svg>
+    </a>
+    <a aria-label="LinkedIn" class="text-on-surface-variant hover:text-primary transition-colors p-2" href="https://www.linkedin.com/in/anant1599" target="_blank" rel="noopener noreferrer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+        </svg>
+    </a>
+    <a aria-label="Email" class="text-on-surface-variant hover:text-primary transition-colors p-2" href="mailto:anantvikramsingh00@gmail.com">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+    </a>
+</div>
+
+<!-- Skills Section -->
+<section class="px-gutter max-w-container-max mx-auto mb-section-padding scroll-mt-24" id="skills">
+    <!-- Skills Main Content -->
+    <div id="skills-main-content" class="transition-all duration-300 opacity-100">
+        <!-- Header -->
+        <div class="flex flex-col mb-10">
+            <h2 class="font-headline-md text-headline-md tracking-tighter mb-4">
+                <span class="text-gradient">SKILLS &amp; TECHNOLOGIES</span>
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                I’m continuously strengthening my technical foundation through hands-on practice, problem solving, and building practical projects.
+            </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="flex gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar snap-x -mx-gutter px-gutter md:mx-0 md:px-0 md:flex-wrap md:overflow-visible" role="tablist" aria-label="Skills Category Filter">
+            <button class="filter-btn bg-primary text-on-primary border-primary px-4 py-2 rounded-full border text-label-caps font-label-caps transition-all cursor-pointer snap-center whitespace-nowrap active:scale-95" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn border-outline-variant/30 text-on-surface-variant hover:border-on-surface hover:text-on-surface bg-surface-container-low/50 backdrop-blur-sm px-4 py-2 rounded-full border text-label-caps font-label-caps transition-all cursor-pointer snap-center whitespace-nowrap active:scale-95" data-filter="programming" role="tab" aria-selected="false">Programming</button>
+            <button class="filter-btn border-outline-variant/30 text-on-surface-variant hover:border-on-surface hover:text-on-surface bg-surface-container-low/50 backdrop-blur-sm px-4 py-2 rounded-full border text-label-caps font-label-caps transition-all cursor-pointer snap-center whitespace-nowrap active:scale-95" data-filter="cs" role="tab" aria-selected="false">Computer Science</button>
+            <button class="filter-btn border-outline-variant/30 text-on-surface-variant hover:border-on-surface hover:text-on-surface bg-surface-container-low/50 backdrop-blur-sm px-4 py-2 rounded-full border text-label-caps font-label-caps transition-all cursor-pointer snap-center whitespace-nowrap active:scale-95" data-filter="web" role="tab" aria-selected="false">Web Development</button>
+            <button class="filter-btn border-outline-variant/30 text-on-surface-variant hover:border-on-surface hover:text-on-surface bg-surface-container-low/50 backdrop-blur-sm px-4 py-2 rounded-full border text-label-caps font-label-caps transition-all cursor-pointer snap-center whitespace-nowrap active:scale-95" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+            <button class="filter-btn border-outline-variant/30 text-on-surface-variant hover:border-on-surface hover:text-on-surface bg-surface-container-low/50 backdrop-blur-sm px-4 py-2 rounded-full border text-label-caps font-label-caps transition-all cursor-pointer snap-center whitespace-nowrap active:scale-95" data-filter="creative" role="tab" aria-selected="false">Creative</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-gutter" id="skills-grid">
+            <!-- C -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="programming">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.3 14.3c-.8.8-1.9 1.2-3.1 1.2-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5c1.2 0 2.3.4 3.1 1.2l-1.4 1.4c-.5-.5-1.1-.7-1.7-.7-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5c.6 0 1.2-.2 1.7-.7l1.4 1.4z"/>
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">C</span>
+            </div>
+
+            <!-- C++ -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="programming">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm8.5 3.8c.8.8 1.9 1.2 3.1 1.2 2.5 0 4.5-2 4.5-4.5s-2-4.5-4.5-4.5c-1.2 0-2.3.4-3.1 1.2l1.4 1.4c.5-.5 1.1-.7 1.7-.7 1.4 0 2.5 1.1 2.5 2.5s-1.1 2.5-2.5 2.5c-.6 0-1.2-.2-1.7-.7l-1.4 1.4zm6.5-6.3h-1v2.5h-2.5v1h2.5v2.5h1v-2.5H21v-1h-2.5V9.5z"/>
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">C++</span>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="programming">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M11.93 2C6.98 2 7.15 4.14 7.15 4.14L7.17 6.4h4.86v.69H5.16s-2.18-.08-2.18 4.86c0 4.95 1.9 4.8 1.9 4.8h1.14v-1.61s-.05-1.92 1.88-1.92h4.86c1.93 0 1.93-1.93 1.93-1.93V6.4s.17-4.4-4.75-4.4zm3.95 5.54v1.61s.05 1.92-1.88 1.92H9.13c-1.93 0-1.93 1.93-1.93 1.93V17.6s-.17 4.4 4.75 4.4c4.95 0 4.78-2.14 4.78-2.14l-.02-2.26H11.8v-.69h6.86s2.18.08 2.18-4.86c0-4.95-1.9-4.8-1.9-4.8h-1.14v.03zm-5.26-3.8c.4 0 .72.32.72.72s-.32.72-.72.72a.72.72 0 110-1.44zm2.71 16.03c.4 0 .72.32.72.72s-.32.72-.72.72a.72.72 0 110-1.44z"/>
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">Python</span>
+            </div>
+
+            <!-- Data Structures & Algorithms -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="cs">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="5" r="3" />
+                    <circle cx="6" cy="19" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="12" y1="8" x2="6" y2="16" />
+                    <line x1="12" y1="8" x2="18" y2="16" />
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">DSA</span>
+            </div>
+
+            <!-- OOP -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="cs">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">OOP</span>
+            </div>
+
+            <!-- Problem Solving -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="cs">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1 .4 2.5 1.5 3.5.7.8 1.3 1.5 1.5 2.5" />
+                    <line x1="9" y1="18" x2="15" y2="18" />
+                    <line x1="10" y1="22" x2="14" y2="22" />
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">Problem Solving</span>
+            </div>
+
+            <!-- HTML -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="web">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                    <line x1="14" y1="4" x2="10" y2="20" />
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">HTML</span>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="web">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.03448 19.1759 5.09918 19.4357 5.0223 19.6806C4.94543 19.9255 4.74092 20.1064 4.48512 20.1555C3.12574 20.4172 2 21.0853 2 22H12Z" />
+                    <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor" />
+                    <circle cx="11.5" cy="7.5" r="1.5" fill="currentColor" />
+                    <circle cx="16.5" cy="9.5" r="1.5" fill="currentColor" />
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">CSS</span>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="web">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M3 3h18v18H3V3zm11.525 10.826c-.053-.787-.525-1.168-1.21-1.168-.698 0-1.114.394-1.114 1.054 0 1.258 2.66 1.125 2.66 2.87 0 1.137-.998 1.918-2.42 1.918-1.505 0-2.31-.77-2.38-1.89h1.365c.061.543.438.893 1.068.893.63 0 1.015-.28 1.015-.858 0-1.286-2.66-1.111-2.66-2.887 0-1.068.858-1.846 2.223-1.846 1.277 0 2.09.613 2.188 1.846h-1.365v.062zm-6.843 3.99c.07.385.341.674.726.674.455 0 .726-.297.726-.97v-6.037h1.383v5.993c0 1.488-.866 2.24-2.11 2.24-1.198 0-1.925-.621-2.09-1.9h1.365z"/>
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">JavaScript</span>
+            </div>
+
+            <!-- Git -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="tools">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M2.697 11.303l8.002-8.002a2.4 2.4 0 0 1 3.396 0l8.002 8.002a2.4 2.4 0 0 1 0 3.396l-8.002 8.002a2.4 2.4 0 0 1-3.396 0l-8.002-8.002a2.4 2.4 0 0 1 0-3.396zm12.355 1.579a2.001 2.001 0 0 0-1.052-1.786v-2.38c.57-.348.955-.965.955-1.671a2 2 0 1 0-4 0c0 .706.385 1.323.955 1.67v4.71a2.001 2.001 0 0 0-1.052 1.787 2.001 2.001 0 1 0 4.001 0c0-.687-.347-1.285-.892-1.637l1.036-1.037c.35.545.95 1.037 1.637 1.037a2 2 0 1 0 0-4c-.707 0-1.323.385-1.671.955l-1.036 1.036z"/>
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">Git</span>
+            </div>
+
+            <!-- GitHub -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="tools">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">GitHub</span>
+            </div>
+
+            <!-- VS Code -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="tools">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M23.985 6.802a.846.846 0 00-.367-.39L17.566.294a.852.852 0 00-1.01.127l-8.083 6.94-4.887-3.7a.843.843 0 00-.868-.052L.416 5.176a.852.852 0 00-.416.734v12.18a.853.853 0 00.416.734l2.302 1.567a.843.843 0 00.868-.052l4.887-3.7 8.083 6.94a.852.852 0 001.01.127l6.052-6.117a.846.846 0 00.367-.39.851.851 0 00-.016-.549l-3.32-6.264 3.32-6.264a.851.851 0 00.016-.549zm-8.835 5.2l-3.41 2.926V9.072l3.41 2.93zM1.7 6.438l10.457 5.564L1.7 17.567V6.438zm16.593 12.186l-5.632-4.834V10.21l5.632-4.834 2.822 5.32-2.822 5.928z"/>
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">VS Code</span>
+            </div>
+
+            <!-- Sketching -->
+            <div id="sketching-card" class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer" data-category="creative">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 20h9" />
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">Sketching</span>
+            </div>
+
+            <!-- Sports -->
+            <div class="skill-card glass-panel glow-effect rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="creative">
+                <svg class="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M6 12A6 6 0 0 1 18 12" />
+                    <path d="M12 6A6 6 0 0 0 12 18" />
+                </svg>
+                <span class="font-label-caps text-label-caps text-on-surface">Sports</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sketch Gallery Content (Hidden by default) -->
+    <div id="sketch-gallery-content" class="hidden opacity-0 transition-all duration-300">
+        <!-- Gallery Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 border-b border-outline-variant/10 pb-6">
+            <div>
+                <h2 class="font-headline-md text-headline-md tracking-tighter mb-2">
+                    <span class="text-gradient">MY SKETCHES</span>
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                    A collection of my sketches and creative work.
+                </p>
+            </div>
+            <button id="back-to-skills-btn" class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-outline-variant/50 text-on-surface hover:border-on-surface hover:bg-surface-variant/20 rounded-lg font-label-caps text-label-caps transition-all cursor-pointer whitespace-nowrap active:scale-95">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="transform: rotate(180deg);">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+                Back to Skills
+            </button>
+        </div>
+
+        <!-- Gallery Grid (Masonry columns) -->
+        <div class="columns-1 sm:columns-2 md:columns-3 gap-6 space-y-6" id="gallery-grid">
+            <!-- Sketch 1 -->
+            <div class="break-inside-avoid overflow-hidden rounded-2xl border border-outline-variant/20 glass-panel cursor-pointer group transition-all duration-300 hover:border-primary/40 hover:shadow-lg">
+                <img src="assets/images/Sketch/sketch1.jpeg" alt="Sketch 1" class="w-full h-auto object-cover rounded-2xl transition-all duration-500 group-hover:scale-105" data-index="0" />
+            </div>
+            <!-- Sketch 2 -->
+            <div class="break-inside-avoid overflow-hidden rounded-2xl border border-outline-variant/20 glass-panel cursor-pointer group transition-all duration-300 hover:border-primary/40 hover:shadow-lg">
+                <img src="assets/images/Sketch/sketch2.jpeg" alt="Sketch 2" class="w-full h-auto object-cover rounded-2xl transition-all duration-500 group-hover:scale-105" data-index="1" />
+            </div>
+            <!-- Sketch 3 -->
+            <div class="break-inside-avoid overflow-hidden rounded-2xl border border-outline-variant/20 glass-panel cursor-pointer group transition-all duration-300 hover:border-primary/40 hover:shadow-lg">
+                <img src="assets/images/Sketch/sketch3.jpeg" alt="Sketch 3" class="w-full h-auto object-cover rounded-2xl transition-all duration-500 group-hover:scale-105" data-index="2" />
+            </div>
+            <!-- Sketch 4 -->
+            <div class="break-inside-avoid overflow-hidden rounded-2xl border border-outline-variant/20 glass-panel cursor-pointer group transition-all duration-300 hover:border-primary/40 hover:shadow-lg">
+                <img src="assets/images/Sketch/sketch4.jpeg" alt="Sketch 4" class="w-full h-auto object-cover rounded-2xl transition-all duration-500 group-hover:scale-105" data-index="3" />
+            </div>
+            <!-- Sketch 5 -->
+            <div class="break-inside-avoid overflow-hidden rounded-2xl border border-outline-variant/20 glass-panel cursor-pointer group transition-all duration-300 hover:border-primary/40 hover:shadow-lg">
+                <img src="assets/images/Sketch/sketch5.jpeg" alt="Sketch 5" class="w-full h-auto object-cover rounded-2xl transition-all duration-500 group-hover:scale-105" data-index="4" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal (Hidden by default) -->
+    <div id="lightbox-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+        <!-- Close Button -->
+        <button id="lightbox-close" class="absolute top-6 right-6 p-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 rounded-full transition-all cursor-pointer z-[110]" aria-label="Close Lightbox">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <!-- Navigation Buttons -->
+        <button id="lightbox-prev" class="absolute left-4 p-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 rounded-full transition-all cursor-pointer z-[110]" aria-label="Previous Sketch">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button id="lightbox-next" class="absolute right-4 p-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 rounded-full transition-all cursor-pointer z-[110]" aria-label="Next Sketch">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+
+        <!-- Image Container -->
+        <div class="max-w-[90%] max-h-[85%] flex items-center justify-center p-2 relative">
+            <img id="lightbox-img" src="" alt="Sketch Preview" class="max-w-full max-h-[80vh] object-contain rounded-xl border border-outline-variant/20 shadow-2xl transition-all duration-300 scale-95" />
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section class="px-gutter max-w-container-max mx-auto mb-section-padding scroll-mt-24" id="projects">
+    <!-- Section Header -->
+    <div class="flex flex-col mb-10 md:mb-12">
+        <h2 class="font-headline-md text-headline-md tracking-tighter mb-4">
+            <span class="text-gradient">FEATURED PROJECTS</span>
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            A collection of projects I have built while learning, experimenting, and applying my technical skills to practical problems.
+        </p>
+    </div>
+
+    <!-- Responsive Projects Grid: Desktop 3 cols, Tablet 2 cols, Mobile 1 col -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch" id="projects-grid">
+        
+        <!-- PROJECT 01 — SMART AGRO SYSTEM -->
+        <div class="project-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer" data-project-index="0">
+            <div class="flex flex-col">
+                <!-- Project Image Container -->
+                <div class="relative w-full aspect-[16/10] overflow-hidden rounded-xl border border-outline-variant/20 mb-5 bg-surface-container-lowest">
+                    <img src="assets/images/projects/smart-agro-system.jpeg" alt="Smart Agro System" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
+                    <!-- Project Number Badge -->
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface/85 backdrop-blur-sm border border-outline-variant/30 text-primary font-code-sm text-xs font-bold shadow-sm">
+                        01
+                    </div>
+                </div>
+
+                <!-- Category Label -->
+                <div class="mb-2">
+                    <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">Hardware / Smart Agriculture</span>
+                </div>
+
+                <!-- Project Name -->
+                <h3 class="font-headline-md text-xl font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors mb-3">
+                    Smart Agro System
+                </h3>
+
+                <!-- Short Description -->
+                <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6 line-clamp-3">
+                    Smart Agro System is an Arduino Uno–based smart agriculture prototype designed to improve agricultural monitoring and automate basic farming tasks.
+                </p>
+            </div>
+
+            <div class="flex flex-col mt-auto pt-2">
+                <!-- Technology Tags -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="font-code-sm text-xs px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20">Arduino Uno</span>
+                </div>
+
+                <!-- VIEW DETAILS Button -->
+                <button type="button" class="view-project-btn w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-primary hover:text-on-primary hover:border-primary text-on-surface font-label-caps text-xs tracking-wider transition-all duration-300 active:scale-95 cursor-pointer shadow-sm group/btn" data-project-index="0">
+                    <span>VIEW DETAILS</span>
+                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover/btn:translate-x-1">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- PROJECT 02 — DAILY COMMAND CENTER -->
+        <div class="project-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer" data-project-index="1">
+            <div class="flex flex-col">
+                <!-- Project Image Container -->
+                <div class="relative w-full aspect-[16/10] overflow-hidden rounded-xl border border-outline-variant/20 mb-5 bg-surface-container-lowest">
+                    <img src="assets/images/projects/daily-command-center.jpeg" alt="Daily Command Center" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
+                    <!-- Project Number Badge -->
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface/85 backdrop-blur-sm border border-outline-variant/30 text-primary font-code-sm text-xs font-bold shadow-sm">
+                        02
+                    </div>
+                </div>
+
+                <!-- Category Label -->
+                <div class="mb-2">
+                    <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">Web Development</span>
+                </div>
+
+                <!-- Project Name -->
+                <h3 class="font-headline-md text-xl font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors mb-3">
+                    Daily Command Center
+                </h3>
+
+                <!-- Short Description -->
+                <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6 line-clamp-3">
+                    Daily Command Center is a personal productivity and accountability web application designed to help users organize their day, track tasks, and monitor daily habits.
+                </p>
+            </div>
+
+            <div class="flex flex-col mt-auto pt-2">
+                <!-- Technology Tags -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="font-code-sm text-xs px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20">HTML</span>
+                    <span class="font-code-sm text-xs px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20">CSS</span>
+                    <span class="font-code-sm text-xs px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20">JavaScript</span>
+                </div>
+
+                <!-- VIEW DETAILS Button -->
+                <button type="button" class="view-project-btn w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-primary hover:text-on-primary hover:border-primary text-on-surface font-label-caps text-xs tracking-wider transition-all duration-300 active:scale-95 cursor-pointer shadow-sm group/btn" data-project-index="1">
+                    <span>VIEW DETAILS</span>
+                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover/btn:translate-x-1">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- PROJECT 03 — PERSONAL PORTFOLIO WEBSITE -->
+        <div class="project-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer" data-project-index="2">
+            <div class="flex flex-col">
+                <!-- Project Image Container -->
+                <div class="relative w-full aspect-[16/10] overflow-hidden rounded-xl border border-outline-variant/20 mb-5 bg-surface-container-lowest">
+                    <img src="assets/images/projects/portfolio-preview.png" alt="Personal Portfolio Website" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
+                    <!-- Project Number Badge -->
+                    <div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface/85 backdrop-blur-sm border border-outline-variant/30 text-primary font-code-sm text-xs font-bold shadow-sm">
+                        03
+                    </div>
+                </div>
+
+                <!-- Category Label -->
+                <div class="mb-2">
+                    <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">Web Development / Personal Portfolio</span>
+                </div>
+
+                <!-- Project Name -->
+                <h3 class="font-headline-md text-xl font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors mb-3">
+                    Personal Portfolio Website
+                </h3>
+
+                <!-- Short Description -->
+                <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6 line-clamp-3">
+                    Designed and customized a responsive personal portfolio website using modern web technologies and AI-assisted development tools.
+                </p>
+            </div>
+
+            <div class="flex flex-col mt-auto pt-2">
+                <!-- Technology Tags -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="font-code-sm text-xs px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20">HTML</span>
+                    <span class="font-code-sm text-xs px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20">CSS</span>
+                    <span class="font-code-sm text-xs px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20">JavaScript</span>
+                    <span class="font-code-sm text-xs px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20">Tailwind CSS</span>
+                </div>
+
+                <!-- VIEW DETAILS Button -->
+                <button type="button" class="view-project-btn w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-primary hover:text-on-primary hover:border-primary text-on-surface font-label-caps text-xs tracking-wider transition-all duration-300 active:scale-95 cursor-pointer shadow-sm group/btn" data-project-index="2">
+                    <span>VIEW DETAILS</span>
+                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover/btn:translate-x-1">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Project Details Modal -->
+<div id="project-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-background/90 backdrop-blur-md hidden opacity-0 transition-opacity duration-300" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <!-- Click backdrop to close -->
+    <div id="project-modal-backdrop" class="absolute inset-0"></div>
+
+    <!-- Modal Dialog Content -->
+    <div id="project-modal-card" class="relative z-10 w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl glass-panel bg-surface-container-low/95 border border-outline-variant/30 shadow-2xl transition-all duration-300 transform scale-95 opacity-0 flex flex-col p-6 sm:p-8 no-scrollbar">
+        <!-- Close Button -->
+        <button id="project-modal-close" class="absolute top-4 right-4 sm:top-6 sm:right-6 p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/30 border border-transparent hover:border-outline-variant/20 transition-all z-20 cursor-pointer" aria-label="Close Project Details">
+            <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+
+        <!-- Project Hero Image -->
+        <div class="w-full overflow-hidden rounded-xl border border-outline-variant/20 mb-6 bg-surface-container-lowest max-h-72 sm:max-h-80 flex items-center justify-center relative">
+            <img id="modal-project-img" src="" alt="Project Image" class="w-full h-full object-cover max-h-72 sm:max-h-80 rounded-xl" />
+        </div>
+
+        <!-- Meta Header: Number, Category & Project Type -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div class="flex items-center gap-2.5">
+                <span id="modal-project-num" class="font-code-sm text-xs font-bold px-2.5 py-1 rounded-md bg-primary-container/40 border border-primary/30 text-primary">01</span>
+                <span id="modal-project-category" class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">Hardware / Smart Agriculture</span>
+            </div>
+            <span id="modal-project-type" class="font-code-sm text-xs px-3 py-1 rounded-full bg-surface-variant/40 border border-outline-variant/25 text-on-surface-variant">Offline Hardware Prototype</span>
+        </div>
+
+        <!-- Project Title -->
+        <h3 id="modal-project-title" class="font-headline-md text-2xl sm:text-3xl text-on-surface font-bold tracking-tight mb-3">
+            Smart Agro System
+        </h3>
+
+        <!-- Full Description -->
+        <p id="modal-project-desc" class="font-body-lg text-base sm:text-lg text-on-surface-variant leading-relaxed mb-6">
+            <!-- Populated by JavaScript -->
+        </p>
+
+        <!-- Tech Stack -->
+        <div class="mb-6">
+            <h4 class="font-label-caps text-xs text-on-surface font-bold tracking-wider uppercase mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined text-base text-primary">memory</span>
+                Technologies
+            </h4>
+            <div id="modal-project-tech" class="flex flex-wrap gap-2">
+                <!-- Tech badges populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="mb-6">
+            <h4 class="font-label-caps text-xs text-on-surface font-bold tracking-wider uppercase mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined text-base text-primary">check_circle</span>
+                Key Features
+            </h4>
+            <ul id="modal-project-features" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 font-body-md text-sm text-on-surface-variant">
+                <!-- Features populated by JavaScript -->
+            </ul>
+        </div>
+
+        <!-- Action Links (only rendered if legitimate URLs exist) -->
+        <div id="modal-project-links" class="flex flex-wrap gap-4 pt-4 border-t border-outline-variant/20 hidden">
+            <!-- Populated by JavaScript if valid external link exists -->
+        </div>
+    </div>
+</div>
+
+<!-- Certifications Section -->
+<section class="px-gutter max-w-container-max mx-auto mb-section-padding scroll-mt-24" id="certifications">
+    <!-- Section Header -->
+    <div class="flex flex-col mb-10 md:mb-12">
+        <h2 class="font-headline-md text-headline-md tracking-tighter mb-4">
+            <span class="text-gradient">CERTIFICATIONS</span>
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Official course completion and achievement certificates validating my technical coursework and software skills.
+        </p>
+    </div>
+
+    <!-- Responsive Certifications Grid: Desktop 3 cols, Tablet 2 cols, Mobile 1 col -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch" id="certifications-grid">
+        
+        <!-- CERTIFICATE 01: Cyber Smart -->
+        <div class="certificate-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer" data-cert-index="0">
+            <div class="flex flex-col">
+                <!-- Certificate Preview Image Container -->
+                <div class="relative w-full aspect-[16/11] overflow-hidden rounded-xl border border-outline-variant/20 mb-5 bg-surface-container-lowest flex items-center justify-center p-1">
+                    <img src="assets/images/certificates/certificate 1.png" alt="Cyber Smart Certificate" class="w-full h-full object-contain rounded-lg transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
+                    <div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-surface/85 backdrop-blur-sm border border-outline-variant/30 text-primary font-code-sm text-xs font-bold shadow-sm flex items-center gap-1">
+                        <span class="material-symbols-outlined text-xs">verified</span>
+                        Verified
+                    </div>
+                </div>
+
+                <!-- Issuing Organization -->
+                <div class="mb-2">
+                    <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">WNS Cares Foundation</span>
+                </div>
+
+                <!-- Certificate Title -->
+                <h3 class="font-headline-md text-xl font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors mb-2">
+                    Cyber Smart
+                </h3>
+
+                <!-- Issue Date -->
+                <div class="flex items-center gap-2 font-code-sm text-xs text-on-surface-variant/80 mb-3">
+                    <span class="material-symbols-outlined text-sm text-primary/70">event</span>
+                    <span>Issued: 12 Jul 2026</span>
+                </div>
+
+                <!-- Credential ID -->
+                <div class="font-code-sm text-xs text-on-surface-variant/60 mb-4 truncate">
+                    ID: <span class="text-on-surface-variant">ANAINDUTT4BA53FSONOTH</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col mt-auto pt-2">
+                <!-- View Certificate Button -->
+                <button type="button" class="view-cert-btn w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-primary hover:text-on-primary hover:border-primary text-on-surface font-label-caps text-xs tracking-wider transition-all duration-300 active:scale-95 cursor-pointer shadow-sm group/btn" data-cert-index="0">
+                    <span>VIEW CERTIFICATE</span>
+                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover/btn:translate-x-1">visibility</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 02: Learning Full Stack React -->
+        <div class="certificate-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer" data-cert-index="1">
+            <div class="flex flex-col">
+                <!-- Certificate Preview Image Container -->
+                <div class="relative w-full aspect-[16/11] overflow-hidden rounded-xl border border-outline-variant/20 mb-5 bg-surface-container-lowest flex items-center justify-center p-1">
+                    <img src="assets/images/certificates/certificate 2.png" alt="Learning Full Stack React Certificate" class="w-full h-full object-contain rounded-lg transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
+                    <div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-surface/85 backdrop-blur-sm border border-outline-variant/30 text-primary font-code-sm text-xs font-bold shadow-sm flex items-center gap-1">
+                        <span class="material-symbols-outlined text-xs">verified</span>
+                        Verified
+                    </div>
+                </div>
+
+                <!-- Issuing Organization -->
+                <div class="mb-2">
+                    <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">Infosys Springboard</span>
+                </div>
+
+                <!-- Certificate Title -->
+                <h3 class="font-headline-md text-xl font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors mb-2">
+                    Learning Full Stack React
+                </h3>
+
+                <!-- Issue Date -->
+                <div class="flex items-center gap-2 font-code-sm text-xs text-on-surface-variant/80 mb-3">
+                    <span class="material-symbols-outlined text-sm text-primary/70">event</span>
+                    <span>Completed: March 24, 2026</span>
+                </div>
+
+                <!-- Credential Type -->
+                <div class="font-code-sm text-xs text-on-surface-variant/60 mb-4 truncate">
+                    Type: <span class="text-on-surface-variant">Course Completion Certificate</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col mt-auto pt-2">
+                <!-- View Certificate Button -->
+                <button type="button" class="view-cert-btn w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-primary hover:text-on-primary hover:border-primary text-on-surface font-label-caps text-xs tracking-wider transition-all duration-300 active:scale-95 cursor-pointer shadow-sm group/btn" data-cert-index="1">
+                    <span>VIEW CERTIFICATE</span>
+                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover/btn:translate-x-1">visibility</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 03: CS107: C++ Programming -->
+        <div class="certificate-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer" data-cert-index="2">
+            <div class="flex flex-col">
+                <!-- Certificate Preview Image Container -->
+                <div class="relative w-full aspect-[16/11] overflow-hidden rounded-xl border border-outline-variant/20 mb-5 bg-surface-container-lowest flex items-center justify-center p-1">
+                    <img src="assets/images/certificates/certificate 3.png" alt="CS107: C++ Programming Certificate" class="w-full h-full object-contain rounded-lg transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
+                    <div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-surface/85 backdrop-blur-sm border border-outline-variant/30 text-primary font-code-sm text-xs font-bold shadow-sm flex items-center gap-1">
+                        <span class="material-symbols-outlined text-xs">verified</span>
+                        Verified
+                    </div>
+                </div>
+
+                <!-- Issuing Organization -->
+                <div class="mb-2">
+                    <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">Saylor Academy</span>
+                </div>
+
+                <!-- Certificate Title -->
+                <h3 class="font-headline-md text-xl font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors mb-2">
+                    CS107: C++ Programming
+                </h3>
+
+                <!-- Issue Date -->
+                <div class="flex items-center gap-2 font-code-sm text-xs text-on-surface-variant/80 mb-3">
+                    <span class="material-symbols-outlined text-sm text-primary/70">event</span>
+                    <span>Issued: January 30, 2026</span>
+                </div>
+
+                <!-- Credential ID -->
+                <div class="font-code-sm text-xs text-on-surface-variant/60 mb-4 truncate">
+                    ID: <span class="text-on-surface-variant">2914135964AS</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col mt-auto pt-2">
+                <!-- View Certificate Button -->
+                <button type="button" class="view-cert-btn w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-primary hover:text-on-primary hover:border-primary text-on-surface font-label-caps text-xs tracking-wider transition-all duration-300 active:scale-95 cursor-pointer shadow-sm group/btn" data-cert-index="2">
+                    <span>VIEW CERTIFICATE</span>
+                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover/btn:translate-x-1">visibility</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Certificate Viewer Modal / Lightbox -->
+<div id="certificate-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-background/90 backdrop-blur-md hidden opacity-0 transition-opacity duration-300" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+    <!-- Click backdrop to close -->
+    <div id="certificate-modal-backdrop" class="absolute inset-0"></div>
+
+    <!-- Modal Content Card -->
+    <div id="certificate-modal-card" class="relative z-10 w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-2xl glass-panel bg-surface-container-low/95 border border-outline-variant/30 shadow-2xl transition-all duration-300 transform scale-95 opacity-0 flex flex-col p-6 sm:p-8 no-scrollbar">
+        <!-- Close Button -->
+        <button id="certificate-modal-close" class="absolute top-4 right-4 sm:top-6 sm:right-6 p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/30 border border-transparent hover:border-outline-variant/20 transition-all z-20 cursor-pointer" aria-label="Close Certificate View">
+            <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+
+        <!-- Certificate Image Container -->
+        <div class="w-full overflow-hidden rounded-xl border border-outline-variant/20 mb-6 bg-surface-container-lowest max-h-[60vh] flex items-center justify-center p-2 sm:p-4">
+            <img id="modal-cert-img" src="" alt="Certificate Preview" class="max-w-full max-h-[55vh] object-contain rounded-lg shadow-lg" />
+        </div>
+
+        <!-- Meta Header: Issuer & Date -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+            <span id="modal-cert-issuer" class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">WNS Cares Foundation</span>
+            <span id="modal-cert-date" class="font-code-sm text-xs px-3 py-1 rounded-full bg-surface-variant/40 border border-outline-variant/25 text-on-surface-variant flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-xs text-primary">event</span>
+                <span>12 Jul 2026</span>
+            </span>
+        </div>
+
+        <!-- Certificate Title -->
+        <h3 id="modal-cert-title" class="font-headline-md text-2xl sm:text-3xl text-on-surface font-bold tracking-tight mb-3">
+            Cyber Smart
+        </h3>
+
+        <!-- Recipient & Details -->
+        <div id="modal-cert-details" class="flex flex-wrap items-center gap-6 text-sm text-on-surface-variant mb-6 font-body-md">
+            <div>Recipient: <span id="modal-cert-recipient" class="text-on-surface font-medium">Anant Vikram Singh</span></div>
+            <div id="modal-cert-id-container">Credential: <span id="modal-cert-id" class="font-code-sm text-primary font-semibold">ANAINDUTT4BA53FSONOTH</span></div>
+        </div>
+
+        <!-- Action Links: Open Original PDF in New Tab -->
+        <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-outline-variant/20 mt-auto">
+            <a id="modal-cert-pdf-link" href="" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-on-primary font-label-caps text-xs tracking-wider hover:bg-primary-fixed transition-colors active:scale-95 shadow-sm">
+                <span>OPEN OFFICIAL PDF</span>
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </a>
+            <button id="modal-cert-close-btn" type="button" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-surface-variant/40 text-on-surface font-label-caps text-xs tracking-wider transition-colors cursor-pointer">
+                <span>CLOSE</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section class="px-gutter max-w-container-max mx-auto mb-section-padding pt-4 scroll-mt-24" id="contact">
+    <!-- Section Header -->
+    <div class="flex flex-col mb-10 md:mb-12">
+        <h2 class="font-headline-md text-headline-md tracking-tighter mb-3">
+            <span class="text-gradient">Let's Connect</span>
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Have a project, opportunity, or just want to connect? Feel free to reach out.
+        </p>
+    </div>
+
+    <!-- Responsive Grid: Desktop 2 Columns (5/7), Mobile 1 Column -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        
+        <!-- LEFT COLUMN: 4 Attractive Contact Cards -->
+        <div class="lg:col-span-5 flex flex-col gap-4">
+            
+            <!-- 1. EMAIL CARD -->
+            <a href="mailto:anantvikramsingh00@gmail.com" class="contact-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer block" aria-label="Send email to Anant Vikram Singh">
+                <div class="w-12 h-12 rounded-xl bg-primary-container/30 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 flex-shrink-0">
+                    <span class="material-symbols-outlined text-2xl">mail</span>
+                </div>
+                <div class="flex flex-col min-w-0 flex-1">
+                    <div class="flex items-center justify-between">
+                        <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase mb-0.5">Email</span>
+                        <span class="material-symbols-outlined text-xs text-on-surface-variant/40 group-hover:text-primary transition-colors">arrow_outward</span>
+                    </div>
+                    <span class="font-body-md text-sm text-on-surface group-hover:text-primary transition-colors truncate font-medium">anantvikramsingh00@gmail.com</span>
+                </div>
+            </a>
+
+            <!-- 2. PHONE CARD (Displays Both Primary & Alternate Phone Numbers) -->
+            <div class="contact-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_rgba(227,190,184,0.12)] hover:border-primary/50">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-primary-container/30 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl">call</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase">Phone Numbers</span>
+                        <span class="font-body-md text-xs text-on-surface-variant">Tap to call directly</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2 pt-1">
+                    <!-- Primary Phone -->
+                    <a href="tel:8081271599" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface-container/60 hover:bg-primary/10 border border-outline-variant/20 hover:border-primary/40 transition-all group/phone" aria-label="Call primary phone number 8081271599">
+                        <div class="flex items-center gap-2">
+                            <span class="font-code-sm text-[10px] px-2 py-0.5 rounded-full bg-primary/15 text-primary border border-primary/30 font-bold uppercase">Primary</span>
+                            <span class="font-body-md text-sm text-on-surface group-hover/phone:text-primary transition-colors font-medium">+91 8081271599</span>
+                        </div>
+                        <span class="material-symbols-outlined text-xs text-primary opacity-60 group-hover/phone:opacity-100 transition-opacity">phone_in_talk</span>
+                    </a>
+
+                    <!-- Alternate Phone -->
+                    <a href="tel:8960371599" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface-container/60 hover:bg-primary/10 border border-outline-variant/20 hover:border-primary/40 transition-all group/phone" aria-label="Call alternate phone number 8960371599">
+                        <div class="flex items-center gap-2">
+                            <span class="font-code-sm text-[10px] px-2 py-0.5 rounded-full bg-surface-variant/50 text-on-surface-variant border border-outline-variant/30 font-bold uppercase">Alternate</span>
+                            <span class="font-body-md text-sm text-on-surface group-hover/phone:text-primary transition-colors font-medium">+91 8960371599</span>
+                        </div>
+                        <span class="material-symbols-outlined text-xs text-primary opacity-60 group-hover/phone:opacity-100 transition-opacity">phone_in_talk</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. GITHUB CARD -->
+            <a href="https://github.com/anant-kachhwah" target="_blank" rel="noopener noreferrer" class="contact-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer block" aria-label="Visit GitHub profile">
+                <div class="w-12 h-12 rounded-xl bg-primary-container/30 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 flex-shrink-0">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                </div>
+                <div class="flex flex-col min-w-0 flex-1">
+                    <div class="flex items-center justify-between">
+                        <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase mb-0.5">GitHub</span>
+                        <span class="material-symbols-outlined text-xs text-on-surface-variant/40 group-hover:text-primary transition-colors">arrow_outward</span>
+                    </div>
+                    <span class="font-body-md text-sm text-on-surface group-hover:text-primary transition-colors truncate font-medium">github.com/anant-kachhwah</span>
+                </div>
+            </a>
+
+            <!-- 4. LINKEDIN CARD -->
+            <a href="https://www.linkedin.com/in/anant1599" target="_blank" rel="noopener noreferrer" class="contact-card group glass-panel rounded-2xl border border-outline-variant/20 p-5 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_rgba(227,190,184,0.12)] hover:border-primary/50 cursor-pointer block" aria-label="Visit LinkedIn profile">
+                <div class="w-12 h-12 rounded-xl bg-primary-container/30 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 flex-shrink-0">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="flex flex-col min-w-0 flex-1">
+                    <div class="flex items-center justify-between">
+                        <span class="font-label-caps text-xs text-primary font-semibold tracking-wider uppercase mb-0.5">LinkedIn</span>
+                        <span class="material-symbols-outlined text-xs text-on-surface-variant/40 group-hover:text-primary transition-colors">arrow_outward</span>
+                    </div>
+                    <span class="font-body-md text-sm text-on-surface group-hover:text-primary transition-colors truncate font-medium">linkedin.com/in/anant1599</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- RIGHT COLUMN: Send Me a Message Contact Form -->
+        <div class="lg:col-span-7">
+            <div class="glass-panel rounded-2xl border border-outline-variant/20 p-6 sm:p-8 relative overflow-hidden shadow-xl shadow-black/15">
+                <!-- Ambient Espresso Glow -->
+                <div class="absolute -right-16 -top-16 w-48 h-48 rounded-full bg-primary/5 blur-[80px] pointer-events-none"></div>
+
+                <div class="mb-6">
+                    <h3 class="font-headline-md text-xl sm:text-2xl text-on-surface font-semibold tracking-tight mb-2">Send Me a Message</h3>
+                    <p class="font-body-md text-sm text-on-surface-variant">Fill in your details below and I will get back to you as soon as possible.</p>
+                </div>
+
+                <form id="contact-form" class="flex flex-col gap-5" novalidate>
+                    <!-- Name Input -->
+                    <div class="flex flex-col gap-2">
+                        <label for="contact-name" class="font-label-caps text-xs text-on-surface-variant tracking-wider uppercase font-semibold">Your Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Anant Vikram Singh" class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 text-on-surface placeholder:text-on-surface-variant/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all font-body-md text-sm" />
+                        <span id="name-error" class="text-xs text-error hidden flex items-center gap-1 mt-1">
+                            <span class="material-symbols-outlined text-xs">error</span> Name cannot be empty
+                        </span>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="flex flex-col gap-2">
+                        <label for="contact-email" class="font-label-caps text-xs text-on-surface-variant tracking-wider uppercase font-semibold">Your Email</label>
+                        <input type="email" id="contact-email" name="email" placeholder="name@example.com" class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 text-on-surface placeholder:text-on-surface-variant/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all font-body-md text-sm" />
+                        <span id="email-error" class="text-xs text-error hidden flex items-center gap-1 mt-1">
+                            <span class="material-symbols-outlined text-xs">error</span> Please enter a valid email address
+                        </span>
+                    </div>
+
+                    <!-- Message Input -->
+                    <div class="flex flex-col gap-2">
+                        <label for="contact-message" class="font-label-caps text-xs text-on-surface-variant tracking-wider uppercase font-semibold">Your Message</label>
+                        <textarea id="contact-message" name="message" rows="4" placeholder="Hi Anant, I'd love to connect regarding..." class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 text-on-surface placeholder:text-on-surface-variant/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all font-body-md text-sm resize-none"></textarea>
+                        <span id="message-error" class="text-xs text-error hidden flex items-center gap-1 mt-1">
+                            <span class="material-symbols-outlined text-xs">error</span> Message cannot be empty
+                        </span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="contact-submit-btn" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary font-label-caps text-xs tracking-wider hover:bg-primary-fixed transition-all duration-300 cursor-pointer active:scale-95 shadow-md group mt-2">
+                        <span>SEND MESSAGE</span>
+                        <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">send</span>
+                    </button>
+
+                    <!-- Form Status / Response Area -->
+                    <div id="form-status" class="hidden transition-all"></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low dark:bg-surface-container-low border-t border-outline-variant/15 mt-auto">
+    <div class="flex flex-col sm:flex-row justify-between items-center py-8 px-gutter max-w-container-max mx-auto gap-4">
+        <div class="flex flex-col items-center sm:items-start gap-1 text-center sm:text-left">
+            <p class="font-code-sm text-sm text-primary font-semibold">
+                © 2026 Anant Vikram Singh
+            </p>
+            <p class="font-body-md text-xs text-on-surface-variant">
+                B.Tech Computer Science &amp; Engineering
+            </p>
+        </div>
+
+        <div class="flex items-center gap-4 sm:gap-5">
+            <!-- GitHub Link -->
+            <a href="https://github.com/anant-kachhwah" target="_blank" rel="noopener noreferrer" class="p-2 text-on-surface-variant hover:text-primary transition-all duration-200 hover:scale-110 active:scale-95" aria-label="GitHub Profile">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+            </a>
+            <!-- LinkedIn Link -->
+            <a href="https://www.linkedin.com/in/anant1599" target="_blank" rel="noopener noreferrer" class="p-2 text-on-surface-variant hover:text-primary transition-all duration-200 hover:scale-110 active:scale-95" aria-label="LinkedIn Profile">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+            <!-- Email Link -->
+            <a href="mailto:anantvikramsingh00@gmail.com" class="p-2 text-on-surface-variant hover:text-primary transition-all duration-200 hover:scale-110 active:scale-95" aria-label="Send Email">
+                <span class="material-symbols-outlined text-xl">mail</span>
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+        // Drawer Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeDrawerBtn = document.getElementById('close-drawer-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const drawerLinks = mobileDrawer.querySelectorAll('a');
+
+        function openDrawer() {
+            mobileDrawer.classList.remove('-translate-x-full');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when drawer is open
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.add('-translate-x-full');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openDrawer);
+        closeDrawerBtn.addEventListener('click', closeDrawer);
+
+        // Close drawer when a link is clicked
+        drawerLinks.forEach(link => {
+            link.addEventListener('click', closeDrawer);
+        });
+
+        // Close drawer when clicking outside (simple implementation)
+        document.addEventListener('click', (event) => {
+            if (!mobileDrawer.contains(event.target) && !mobileMenuBtn.contains(event.target) && !mobileDrawer.classList.contains('-translate-x-full')) {
+                closeDrawer();
+            }
+        });
+
+        // Skills Filter, Gallery & Lightbox Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillsSection = document.getElementById('skills');
+            const skillCards = document.querySelectorAll('.skill-card');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            // Elements for Gallery swap
+            const skillsMainContent = document.getElementById('skills-main-content');
+            const sketchGalleryContent = document.getElementById('sketch-gallery-content');
+            const sketchingCard = document.getElementById('sketching-card');
+            const backToSkillsBtn = document.getElementById('back-to-skills-btn');
+
+            // Set initial animation state for scroll reveal (progressive enhancement)
+            skillCards.forEach(card => {
+                card.classList.add('opacity-0', 'translate-y-[15px]', 'scale-[0.95]');
+            });
+
+            // Intersection Observer for scroll reveal
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const visibleCards = Array.from(skillCards).filter(c => !c.classList.contains('hidden'));
+                        visibleCards.forEach((card, idx) => {
+                            setTimeout(() => {
+                                card.classList.remove('opacity-0', 'translate-y-[15px]', 'scale-[0.95]');
+                                card.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                            }, idx * 40);
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05 });
+
+            if (skillsSection) {
+                observer.observe(skillsSection);
+            }
+
+            // Filter Buttons Click Handler
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Disconnect observer once user starts manual filtering
+                    observer.disconnect();
+
+                    // Update active button styling & aria state
+                    filterButtons.forEach(b => {
+                        b.classList.remove('bg-primary', 'text-on-primary', 'border-primary');
+                        b.classList.add('border-outline-variant/30', 'text-on-surface-variant', 'hover:border-on-surface');
+                        b.setAttribute('aria-selected', 'false');
+                    });
+                    btn.classList.remove('border-outline-variant/30', 'text-on-surface-variant', 'hover:border-on-surface');
+                    btn.classList.add('bg-primary', 'text-on-primary', 'border-primary');
+                    btn.setAttribute('aria-selected', 'true');
+
+                    const category = btn.getAttribute('data-filter');
+
+                    let activeIdx = 0;
+                    skillCards.forEach(card => {
+                        const cardCat = card.getAttribute('data-category');
+                        const isMatch = (category === 'all' || cardCat === category);
+
+                        if (isMatch) {
+                            card.classList.remove('hidden');
+                            // Trigger reflow to apply display removal
+                            void card.offsetWidth;
+                            setTimeout(() => {
+                                card.classList.remove('opacity-0', 'translate-y-[15px]', 'scale-[0.95]', 'pointer-events-none');
+                                card.classList.add('opacity-100', 'translate-y-0', 'scale-100', 'pointer-events-auto');
+                            }, activeIdx * 30 + 10);
+                            activeIdx++;
+                        } else {
+                            card.classList.remove('opacity-100', 'translate-y-0', 'scale-100', 'pointer-events-auto');
+                            card.classList.add('opacity-0', 'translate-y-[15px]', 'scale-[0.95]', 'pointer-events-none');
+                            setTimeout(() => {
+                                if (card.classList.contains('opacity-0')) {
+                                    card.classList.add('hidden');
+                                }
+                            }, 250);
+                        }
+                    });
+                });
+            });
+
+            // --- SKETCH GALLERY TRANSITION LOGIC ---
+            function openSketchGallery() {
+                observer.disconnect(); // Stop scroll reveal observer
+                
+                // Fade out main skills grid content
+                skillsMainContent.classList.remove('opacity-100');
+                skillsMainContent.classList.add('opacity-0');
+                
+                setTimeout(() => {
+                    skillsMainContent.classList.add('hidden');
+                    sketchGalleryContent.classList.remove('hidden');
+                    
+                    // Force reflow
+                    void sketchGalleryContent.offsetWidth;
+                    
+                    sketchGalleryContent.classList.remove('opacity-0');
+                    sketchGalleryContent.classList.add('opacity-100');
+                    
+                    // Smoothly scroll to top of section
+                    skillsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 300);
+            }
+
+            function closeSketchGallery() {
+                // Fade out gallery content
+                sketchGalleryContent.classList.remove('opacity-100');
+                sketchGalleryContent.classList.add('opacity-0');
+                
+                setTimeout(() => {
+                    sketchGalleryContent.classList.add('hidden');
+                    skillsMainContent.classList.remove('hidden');
+                    
+                    // Force reflow
+                    void skillsMainContent.offsetWidth;
+                    
+                    skillsMainContent.classList.remove('opacity-0');
+                    skillsMainContent.classList.add('opacity-100');
+                    
+                    // Trigger stagger animations on skills showing
+                    const visibleCards = Array.from(skillCards).filter(c => !c.classList.contains('hidden'));
+                    visibleCards.forEach((card, idx) => {
+                        card.classList.add('opacity-0', 'translate-y-[15px]', 'scale-[0.95]');
+                        setTimeout(() => {
+                            card.classList.remove('opacity-0', 'translate-y-[15px]', 'scale-[0.95]');
+                            card.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                        }, idx * 30);
+                    });
+
+                    // Smoothly scroll back to top of Skills section
+                    skillsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 300);
+            }
+
+            if (sketchingCard) {
+                sketchingCard.addEventListener('click', openSketchGallery);
+            }
+            if (backToSkillsBtn) {
+                backToSkillsBtn.addEventListener('click', closeSketchGallery);
+            }
+
+            // --- LIGHTBOX GALLERY LOGIC ---
+            const sketchImages = [
+                'assets/images/Sketch/sketch1.jpeg',
+                'assets/images/Sketch/sketch2.jpeg',
+                'assets/images/Sketch/sketch3.jpeg',
+                'assets/images/Sketch/sketch4.jpeg',
+                'assets/images/Sketch/sketch5.jpeg'
+            ];
+
+            let currentSketchIndex = 0;
+            const galleryImages = document.querySelectorAll('#gallery-grid img');
+            const lightboxModal = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.getElementById('lightbox-close');
+            const lightboxPrev = document.getElementById('lightbox-prev');
+            const lightboxNext = document.getElementById('lightbox-next');
+
+            // Open Lightbox
+            galleryImages.forEach(img => {
+                img.addEventListener('click', (e) => {
+                    const idx = parseInt(e.currentTarget.getAttribute('data-index'), 10);
+                    showLightbox(idx);
+                });
+            });
+
+            function showLightbox(index) {
+                currentSketchIndex = index;
+                lightboxImg.src = sketchImages[currentSketchIndex];
+                lightboxModal.classList.remove('hidden');
+                
+                // Force reflow
+                void lightboxModal.offsetWidth;
+                
+                lightboxModal.classList.remove('opacity-0');
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
+                document.body.style.overflow = 'hidden'; // Disable background scroll
+            }
+
+            function hideLightbox() {
+                lightboxModal.classList.add('opacity-0');
+                lightboxImg.classList.remove('scale-100');
+                lightboxImg.classList.add('scale-95');
+                setTimeout(() => {
+                    lightboxModal.classList.add('hidden');
+                    document.body.style.overflow = ''; // Re-enable background scroll
+                }, 300);
+            }
+
+            function navigatePrev() {
+                currentSketchIndex = (currentSketchIndex - 1 + sketchImages.length) % sketchImages.length;
+                lightboxImg.style.opacity = '0.3';
+                setTimeout(() => {
+                    lightboxImg.src = sketchImages[currentSketchIndex];
+                    lightboxImg.style.opacity = '1';
+                }, 100);
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (lightboxModal.classList.contains('hidden')) return;
+                
+                if (e.key === 'Escape') {
+                    hideLightbox();
+                } else if (e.key === 'ArrowLeft') {
+                    navigatePrev();
+                } else if (e.key === 'ArrowRight') {
+                    navigateNext();
+                }
+            });
+
+            function navigateNext() {
+                currentSketchIndex = (currentSketchIndex + 1) % sketchImages.length;
+                lightboxImg.style.opacity = '0.3';
+                setTimeout(() => {
+                    lightboxImg.src = sketchImages[currentSketchIndex];
+                    lightboxImg.style.opacity = '1';
+                }, 100);
+            }
+
+            if (lightboxClose) lightboxClose.addEventListener('click', hideLightbox);
+            if (lightboxPrev) lightboxPrev.addEventListener('click', navigatePrev);
+            if (lightboxNext) lightboxNext.addEventListener('click', navigateNext);
+
+            // Close on background click
+            if (lightboxModal) {
+                lightboxModal.addEventListener('click', (e) => {
+                    if (e.target === lightboxModal || 
+                        (!lightboxImg.contains(e.target) && 
+                         !lightboxPrev.contains(e.target) && 
+                         !lightboxNext.contains(e.target) && 
+                         !lightboxClose.contains(e.target))) {
+                        hideLightbox();
+                    }
+                });
+            }
+
+            // --- ABOUT ME INTERACTIVE TIMELINE LOGIC ---
+            const milestoneData = [
+                {
+                    icon: '🎓',
+                    title: 'Student',
+                    text: 'I am Anant Vikram Singh, a B.Tech Computer Science and Engineering student with a strong interest in software development, programming, and problem solving. I am currently strengthening my foundation in Data Structures & Algorithms and C++ while exploring modern web development and new technologies.',
+                    highlights: ['B.Tech CSE Student', 'Focused on C++ & Data Structures']
+                },
+                {
+                    icon: '💻',
+                    title: 'Developer',
+                    text: 'I enjoy learning by building practical projects and continuously improving my technical skills through hands-on practice. My goal is to develop strong computer science fundamentals and grow into a skilled software engineer.',
+                    highlights: ['Interested in Software Development']
+                },
+                {
+                    icon: '🏏',
+                    title: 'Sports Enthusiast',
+                    text: 'Outside of coding, I’m passionate about sports and enjoy sketching in my free time. Sketching gives me a creative break from technology and allows me to express my creative side.',
+                    highlights: ['Sports Enthusiast']
+                },
+                {
+                    icon: '✏️',
+                    title: 'Creative Side / Sketching',
+                    text: 'Outside of coding, I’m passionate about sports and enjoy sketching in my free time. Sketching gives me a creative break from technology and allows me to express my creative side.',
+                    highlights: ['Sketching & Creative Work'],
+                    showSketchesBtn: true
+                }
+            ];
+
+            const desktopMilestoneBtns = document.querySelectorAll('.milestone-btn');
+            const mobileMilestoneBtns = document.querySelectorAll('.milestone-mobile-btn');
+            const timelineProgress = document.getElementById('timeline-progress');
+            const verticalTimelineProgress = document.getElementById('vertical-timeline-progress');
+            
+            const activeIcon = document.getElementById('about-active-icon');
+            const activeTitle = document.getElementById('about-active-title');
+            const activeText = document.getElementById('about-active-text');
+            const activeHighlights = document.getElementById('about-active-highlights');
+            const contentWrapper = document.getElementById('about-content-wrapper');
+            const sketchBtnContainer = document.getElementById('sketch-btn-container');
+            const viewSketchesBtn = document.getElementById('view-sketches-btn');
+
+            let currentAboutIndex = 0;
+
+            function updateAboutSection(index, isInitial = false) {
+                currentAboutIndex = index;
+                const data = milestoneData[index];
+                
+                // Update Timeline Progress Lines
+                const progressPercent = (index / (milestoneData.length - 1)) * 100;
+                if (timelineProgress) timelineProgress.style.width = `${progressPercent}%`;
+                if (verticalTimelineProgress) verticalTimelineProgress.style.height = `${progressPercent}%`;
+
+                // Update Desktop Buttons active styles
+                desktopMilestoneBtns.forEach((btn, idx) => {
+                    const dot = btn.querySelector('.milestone-dot');
+                    const label = btn.querySelector('span');
+                    if (idx === index) {
+                        dot.classList.remove('border-outline-variant/30', 'bg-surface', 'text-on-surface-variant');
+                        dot.classList.add('border-primary', 'bg-primary/10', 'text-primary', 'scale-110', 'ring-2', 'ring-primary/20', 'shadow-lg', 'shadow-primary/10');
+                        label.classList.remove('text-on-surface-variant');
+                        label.classList.add('text-primary', 'font-bold');
+                    } else {
+                        dot.classList.remove('border-primary', 'bg-primary/10', 'text-primary', 'scale-110', 'ring-2', 'ring-primary/20', 'shadow-lg', 'shadow-primary/10');
+                        dot.classList.add('border-outline-variant/30', 'bg-surface', 'text-on-surface-variant');
+                        label.classList.remove('text-primary', 'font-bold');
+                        label.classList.add('text-on-surface-variant');
+                    }
+                });
+
+                // Update Mobile Buttons active styles
+                mobileMilestoneBtns.forEach((btn, idx) => {
+                    const dot = btn.querySelector('.mobile-dot');
+                    const label = btn.querySelector('.mobile-label');
+                    if (idx === index) {
+                        dot.classList.remove('border-outline-variant/30', 'bg-surface', 'text-on-surface-variant');
+                        dot.classList.add('border-primary', 'bg-primary/10', 'text-primary', 'scale-110', 'ring-2', 'ring-primary/20', 'shadow-lg', 'shadow-primary/10');
+                        label.classList.remove('text-on-surface-variant');
+                        label.classList.add('text-primary', 'font-bold');
+                    } else {
+                        dot.classList.remove('border-primary', 'bg-primary/10', 'text-primary', 'scale-110', 'ring-2', 'ring-primary/20', 'shadow-lg', 'shadow-primary/10');
+                        dot.classList.add('border-outline-variant/30', 'bg-surface', 'text-on-surface-variant');
+                        label.classList.remove('text-primary', 'font-bold');
+                        label.classList.add('text-on-surface-variant');
+                    }
+                });
+
+                if (isInitial) {
+                    // Populate immediately without fade animation for clean initial load
+                    activeIcon.textContent = data.icon;
+                    activeTitle.textContent = data.title;
+                    activeText.textContent = data.text;
+                    
+                    // Populate Highlights
+                    activeHighlights.innerHTML = '';
+                    data.highlights.forEach(hl => {
+                        const badge = document.createElement('span');
+                        badge.className = 'font-code-sm text-xs bg-primary-container/20 text-primary border border-primary/20 px-3 py-1 rounded-full';
+                        badge.textContent = hl;
+                        activeHighlights.appendChild(badge);
+                    });
+
+                    // Manage Sketches Button
+                    if (data.showSketchesBtn) {
+                        sketchBtnContainer.classList.remove('hidden');
+                        void sketchBtnContainer.offsetWidth; // Reflow
+                        sketchBtnContainer.classList.remove('opacity-0');
+                    } else {
+                        sketchBtnContainer.classList.add('hidden', 'opacity-0');
+                    }
+                } else {
+                    // Smooth Transition
+                    contentWrapper.classList.add('opacity-0', 'translate-y-2', 'scale-98');
+                    
+                    setTimeout(() => {
+                        activeIcon.textContent = data.icon;
+                        activeTitle.textContent = data.title;
+                        activeText.textContent = data.text;
+                        
+                        // Populate Highlights
+                        activeHighlights.innerHTML = '';
+                        data.highlights.forEach(hl => {
+                            const badge = document.createElement('span');
+                            badge.className = 'font-code-sm text-xs bg-primary-container/20 text-primary border border-primary/20 px-3 py-1 rounded-full';
+                            badge.textContent = hl;
+                            activeHighlights.appendChild(badge);
+                        });
+
+                        // Manage Sketches Button
+                        if (data.showSketchesBtn) {
+                            sketchBtnContainer.classList.remove('hidden');
+                            void sketchBtnContainer.offsetWidth; // Reflow
+                            sketchBtnContainer.classList.remove('opacity-0');
+                        } else {
+                            sketchBtnContainer.classList.add('hidden', 'opacity-0');
+                        }
+                        
+                        contentWrapper.classList.remove('opacity-0', 'translate-y-2', 'scale-98');
+                    }, 150);
+                }
+            }
+
+            // Click Listeners
+            desktopMilestoneBtns.forEach((btn, idx) => {
+                btn.addEventListener('click', () => updateAboutSection(idx));
+            });
+
+            mobileMilestoneBtns.forEach((btn, idx) => {
+                btn.addEventListener('click', () => updateAboutSection(idx));
+            });
+
+            if (viewSketchesBtn) {
+                viewSketchesBtn.addEventListener('click', () => {
+                    if (typeof openSketchGallery === 'function') {
+                        openSketchGallery();
+                    }
+                });
+            }
+
+            // Scroll Reveal Observer for About Section
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                const aboutObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const timelineContainer = document.querySelector('.timeline-container');
+                            const aboutCard = document.getElementById('about-content-card');
+                            
+                            if (timelineContainer) {
+                                timelineContainer.classList.remove('opacity-0', 'translate-y-8');
+                                timelineContainer.classList.add('opacity-100', 'translate-y-0');
+                            }
+                            if (aboutCard) {
+                                aboutCard.classList.remove('opacity-0', 'translate-y-8');
+                                aboutCard.classList.add('opacity-100', 'translate-y-0');
+                            }
+                            aboutObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.05 });
+                aboutObserver.observe(aboutSection);
+            }
+
+            // --- FEATURED PROJECTS LOGIC & MODAL ---
+            const projectsData = [
+                {
+                    number: '01',
+                    title: 'Smart Agro System',
+                    category: 'Hardware / Smart Agriculture',
+                    projectType: 'Offline Hardware Prototype',
+                    image: 'assets/images/projects/smart-agro-system.jpeg',
+                    description: 'Smart Agro System is an Arduino Uno–based smart agriculture prototype designed to improve agricultural monitoring and automate basic farming tasks.',
+                    technologies: ['Arduino Uno'],
+                    features: [
+                        'Automatic drip irrigation when the field moisture level becomes low',
+                        'Crop disease detection',
+                        'Manure moisture monitoring',
+                        'Red warning light when manure becomes too dry',
+                        'LCD display for monitoring sensor readings'
+                    ],
+                    links: []
+                },
+                {
+                    number: '02',
+                    title: 'Daily Command Center',
+                    category: 'Web Development',
+                    projectType: 'Web Application',
+                    image: 'assets/images/projects/daily-command-center.jpeg',
+                    description: 'Daily Command Center is a personal productivity and accountability web application designed to help users organize their day, track tasks, and monitor daily habits.',
+                    technologies: ['HTML', 'CSS', 'JavaScript'],
+                    features: [
+                        'Add daily tasks',
+                        'Track whether tasks are completed',
+                        'Track daily habits',
+                        'View completed task percentage',
+                        'Display daily status',
+                        'Navigate between different dates',
+                        '7-day habit tracking view',
+                        'Track daily activity and progress'
+                    ],
+                    links: []
+                },
+                {
+                    number: '03',
+                    title: 'Personal Portfolio Website',
+                    category: 'Web Development / Personal Portfolio',
+                    projectType: 'Personal Portfolio',
+                    image: 'assets/images/projects/portfolio-preview.png',
+                    description: 'Designed and customized a responsive personal portfolio website using modern web technologies and AI-assisted development tools to showcase my skills, projects, achievements, certificates, social profiles, and creative interests.',
+                    technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
+                    features: [
+                        'Responsive modern portfolio design',
+                        'Interactive Hero section',
+                        'Dynamic About section',
+                        'Dynamic Skills section',
+                        'Interactive Sketching section',
+                        'Project showcase',
+                        'Certificates showcase',
+                        'Social profile integration',
+                        'Contact section',
+                        'Responsive navigation',
+                        'Smooth scrolling',
+                        'Interactive UI elements'
+                    ],
+                    links: []
+                }
+            ];
+
+            const projectModal = document.getElementById('project-modal');
+            const projectModalCard = document.getElementById('project-modal-card');
+            const projectModalBackdrop = document.getElementById('project-modal-backdrop');
+            const projectModalClose = document.getElementById('project-modal-close');
+
+            function openProjectModal(index) {
+                const project = projectsData[index];
+                if (!project || !projectModal) return;
+
+                // Populate Modal Data
+                const modalImg = document.getElementById('modal-project-img');
+                const modalNum = document.getElementById('modal-project-num');
+                const modalCategory = document.getElementById('modal-project-category');
+                const modalType = document.getElementById('modal-project-type');
+                const modalTitle = document.getElementById('modal-project-title');
+                const modalDesc = document.getElementById('modal-project-desc');
+                const modalTech = document.getElementById('modal-project-tech');
+                const modalFeatures = document.getElementById('modal-project-features');
+                const modalLinks = document.getElementById('modal-project-links');
+
+                if (modalImg) {
+                    modalImg.src = project.image;
+                    modalImg.alt = project.title;
+                }
+                if (modalNum) modalNum.textContent = project.number;
+                if (modalCategory) modalCategory.textContent = project.category;
+                if (modalType) modalType.textContent = project.projectType;
+                if (modalTitle) modalTitle.textContent = project.title;
+                if (modalDesc) modalDesc.textContent = project.description;
+
+                // Populate Technologies
+                if (modalTech) {
+                    modalTech.innerHTML = '';
+                    project.technologies.forEach(tech => {
+                        const span = document.createElement('span');
+                        span.className = 'font-code-sm text-xs px-3 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/20';
+                        span.textContent = tech;
+                        modalTech.appendChild(span);
+                    });
+                }
+
+                // Populate Features
+                if (modalFeatures) {
+                    modalFeatures.innerHTML = '';
+                    project.features.forEach(feature => {
+                        const li = document.createElement('li');
+                        li.className = 'flex items-start gap-2.5 p-2.5 rounded-lg bg-surface-container/50 border border-outline-variant/15';
+                        li.innerHTML = `
+                            <span class="material-symbols-outlined text-primary text-base mt-0.5 flex-shrink-0">check</span>
+                            <span class="text-on-surface-variant text-sm leading-snug">${feature}</span>
+                        `;
+                        modalFeatures.appendChild(li);
+                    });
+                }
+
+                // Handle External Links (Strictly no fake links, no empty buttons)
+                if (modalLinks) {
+                    modalLinks.innerHTML = '';
+                    if (project.links && project.links.length > 0) {
+                        project.links.forEach(link => {
+                            if (link.url && link.url !== '#') {
+                                const a = document.createElement('a');
+                                a.href = link.url;
+                                a.target = '_blank';
+                                a.rel = 'noopener noreferrer';
+                                a.className = 'inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-caps text-xs hover:bg-primary-fixed transition-colors';
+                                a.innerHTML = `<span>${link.label}</span><span class="material-symbols-outlined text-sm">open_in_new</span>`;
+                                modalLinks.appendChild(a);
+                            }
+                        });
+                        if (modalLinks.children.length > 0) {
+                            modalLinks.classList.remove('hidden');
+                        } else {
+                            modalLinks.classList.add('hidden');
+                        }
+                    } else {
+                        modalLinks.classList.add('hidden');
+                    }
+                }
+
+                // Show Modal Smoothly
+                projectModal.classList.remove('hidden');
+                void projectModal.offsetWidth; // Force browser reflow
+                projectModal.classList.remove('opacity-0');
+                if (projectModalCard) {
+                    projectModalCard.classList.remove('opacity-0', 'scale-95');
+                    projectModalCard.classList.add('opacity-100', 'scale-100');
+                }
+                document.body.style.overflow = 'hidden'; // Lock background scroll
+            }
+
+            function closeProjectModal() {
+                if (!projectModal) return;
+                projectModal.classList.add('opacity-0');
+                if (projectModalCard) {
+                    projectModalCard.classList.remove('opacity-100', 'scale-100');
+                    projectModalCard.classList.add('opacity-0', 'scale-95');
+                }
+                setTimeout(() => {
+                    projectModal.classList.add('hidden');
+                    document.body.style.overflow = ''; // Restore background scroll
+                }, 300);
+            }
+
+            // Bind Event Listeners for Project Modal
+            document.querySelectorAll('.view-project-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const idx = parseInt(btn.getAttribute('data-project-index'), 10);
+                    openProjectModal(idx);
+                });
+            });
+
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (!e.target.closest('button') && !e.target.closest('a')) {
+                        const idx = parseInt(card.getAttribute('data-project-index'), 10);
+                        openProjectModal(idx);
+                    }
+                });
+            });
+
+            if (projectModalClose) {
+                projectModalClose.addEventListener('click', closeProjectModal);
+            }
+
+            if (projectModalBackdrop) {
+                projectModalBackdrop.addEventListener('click', closeProjectModal);
+            }
+
+            if (projectModal) {
+                projectModal.addEventListener('click', (e) => {
+                    if (e.target === projectModal) {
+                        closeProjectModal();
+                    }
+                });
+            }
+
+            // Close on ESC Key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    if (projectModal && !projectModal.classList.contains('hidden')) {
+                        closeProjectModal();
+                    }
+                    if (typeof closeCertificateModal === 'function' && certModal && !certModal.classList.contains('hidden')) {
+                        closeCertificateModal();
+                    }
+                    if (typeof closeDrawer === 'function' && mobileDrawer && !mobileDrawer.classList.contains('-translate-x-full')) {
+                        closeDrawer();
+                    }
+                }
+            });
+
+            // Scroll Reveal Observer for Featured Projects Section
+            const projectsSectionEl = document.getElementById('projects');
+            const projectCardsList = document.querySelectorAll('.project-card');
+            if (projectsSectionEl && projectCardsList.length > 0) {
+                projectCardsList.forEach(card => {
+                    card.classList.add('opacity-0', 'translate-y-[15px]', 'scale-[0.98]');
+                });
+
+                const projectObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            projectCardsList.forEach((card, idx) => {
+                                setTimeout(() => {
+                                    card.classList.remove('opacity-0', 'translate-y-[15px]', 'scale-[0.98]');
+                                    card.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                                }, idx * 90);
+                            });
+                            projectObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.05 });
+                projectObserver.observe(projectsSectionEl);
+
+                // Safety fallback to guarantee cards are visible
+                setTimeout(() => {
+                    projectCardsList.forEach(card => {
+                        card.classList.remove('opacity-0', 'translate-y-[15px]', 'scale-[0.98]');
+                        card.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                    });
+                }, 1200);
+            }
+
+            // --- CERTIFICATIONS DATA & MODAL LOGIC ---
+            const certsData = [
+                {
+                    title: 'Cyber Smart',
+                    issuer: 'WNS Cares Foundation',
+                    date: '12 Jul 2026',
+                    recipient: 'Anant Vikram Singh',
+                    id: 'ANAINDUTT4BA53FSONOTH',
+                    idLabel: 'Certificate Code',
+                    previewImage: 'assets/images/certificates/certificate 1.png',
+                    pdfPath: 'assets/images/certificates/ANANT VIKRAM SINGH - CyberSmart.pdf'
+                },
+                {
+                    title: 'Learning Full Stack React',
+                    issuer: 'Infosys Springboard',
+                    date: 'March 24, 2026',
+                    recipient: 'Anant Vikram Singh',
+                    id: 'Course Completion Certificate',
+                    idLabel: 'Credential Type',
+                    previewImage: 'assets/images/certificates/certificate 2.png',
+                    pdfPath: 'assets/images/certificates/certificate 2.pdf'
+                },
+                {
+                    title: 'CS107: C++ Programming',
+                    issuer: 'Saylor Academy',
+                    date: 'January 30, 2026',
+                    recipient: 'Anant Vikram Singh',
+                    id: '2914135964AS',
+                    idLabel: 'Certificate ID',
+                    previewImage: 'assets/images/certificates/certificate 3.png',
+                    pdfPath: 'assets/images/certificates/certificate 3.pdf'
+                }
+            ];
+
+            const certModal = document.getElementById('certificate-modal');
+            const certModalCard = document.getElementById('certificate-modal-card');
+            const certModalBackdrop = document.getElementById('certificate-modal-backdrop');
+            const certModalClose = document.getElementById('certificate-modal-close');
+            const certModalCloseBtn = document.getElementById('modal-cert-close-btn');
+
+            function openCertificateModal(index) {
+                const cert = certsData[index];
+                if (!cert || !certModal) return;
+
+                const modalImg = document.getElementById('modal-cert-img');
+                const modalIssuer = document.getElementById('modal-cert-issuer');
+                const modalDate = document.getElementById('modal-cert-date');
+                const modalTitle = document.getElementById('modal-cert-title');
+                const modalRecipient = document.getElementById('modal-cert-recipient');
+                const modalIdContainer = document.getElementById('modal-cert-id-container');
+                const modalPdfLink = document.getElementById('modal-cert-pdf-link');
+
+                if (modalImg) {
+                    modalImg.src = cert.previewImage;
+                    modalImg.alt = cert.title;
+                }
+                if (modalIssuer) modalIssuer.textContent = cert.issuer;
+                if (modalDate) {
+                    modalDate.innerHTML = `<span class="material-symbols-outlined text-xs text-primary">event</span><span>${cert.date}</span>`;
+                }
+                if (modalTitle) modalTitle.textContent = cert.title;
+                if (modalRecipient) modalRecipient.textContent = cert.recipient;
+                if (modalIdContainer) {
+                    if (cert.id) {
+                        modalIdContainer.innerHTML = `${cert.idLabel || 'Credential'}: <span class="font-code-sm text-primary font-semibold">${cert.id}</span>`;
+                        modalIdContainer.classList.remove('hidden');
+                    } else {
+                        modalIdContainer.classList.add('hidden');
+                    }
+                }
+                if (modalPdfLink) {
+                    modalPdfLink.href = cert.pdfPath;
+                }
+
+                // Show modal smoothly
+                certModal.classList.remove('hidden');
+                void certModal.offsetWidth; // force reflow
+                certModal.classList.remove('opacity-0');
+                if (certModalCard) {
+                    certModalCard.classList.remove('opacity-0', 'scale-95');
+                    certModalCard.classList.add('opacity-100', 'scale-100');
+                }
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeCertificateModal() {
+                if (!certModal) return;
+                certModal.classList.add('opacity-0');
+                if (certModalCard) {
+                    certModalCard.classList.remove('opacity-100', 'scale-100');
+                    certModalCard.classList.add('opacity-0', 'scale-95');
+                }
+                setTimeout(() => {
+                    certModal.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+
+            // Click listeners for cert cards & buttons
+            document.querySelectorAll('.view-cert-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const idx = parseInt(btn.getAttribute('data-cert-index'), 10);
+                    openCertificateModal(idx);
+                });
+            });
+
+            document.querySelectorAll('.certificate-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (!e.target.closest('button') && !e.target.closest('a')) {
+                        const idx = parseInt(card.getAttribute('data-cert-index'), 10);
+                        openCertificateModal(idx);
+                    }
+                });
+            });
+
+            if (certModalClose) certModalClose.addEventListener('click', closeCertificateModal);
+            if (certModalCloseBtn) certModalCloseBtn.addEventListener('click', closeCertificateModal);
+            if (certModalBackdrop) certModalBackdrop.addEventListener('click', closeCertificateModal);
+            if (certModal) {
+                certModal.addEventListener('click', (e) => {
+                    if (e.target === certModal) closeCertificateModal();
+                });
+            }
+
+            // Scroll reveal for certifications
+            const certsSectionEl = document.getElementById('certifications');
+            const certCardsList = document.querySelectorAll('.certificate-card');
+            if (certsSectionEl && certCardsList.length > 0) {
+                certCardsList.forEach(card => {
+                    card.classList.add('opacity-0', 'translate-y-[15px]', 'scale-[0.98]');
+                });
+
+                const certObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            certCardsList.forEach((card, idx) => {
+                                setTimeout(() => {
+                                    card.classList.remove('opacity-0', 'translate-y-[15px]', 'scale-[0.98]');
+                                    card.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                                }, idx * 90);
+                            });
+                            certObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.05 });
+                certObserver.observe(certsSectionEl);
+
+                // Safety fallback to guarantee cards are visible
+                setTimeout(() => {
+                    certCardsList.forEach(card => {
+                        card.classList.remove('opacity-0', 'translate-y-[15px]', 'scale-[0.98]');
+                        card.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                    });
+                }, 1200);
+            }
+
+            // --- CONTACT FORM VALIDATION & HANDLING ---
+            const contactForm = document.getElementById('contact-form');
+            const contactName = document.getElementById('contact-name');
+            const contactEmail = document.getElementById('contact-email');
+            const contactMessage = document.getElementById('contact-message');
+            const nameError = document.getElementById('name-error');
+            const emailError = document.getElementById('email-error');
+            const messageError = document.getElementById('message-error');
+            const formStatus = document.getElementById('form-status');
+
+            if (contactForm) {
+                // Real-time error clearing
+                if (contactName) {
+                    contactName.addEventListener('input', () => {
+                        if (contactName.value.trim() !== '') {
+                            if (nameError) nameError.classList.add('hidden');
+                            contactName.classList.remove('border-error');
+                        }
+                    });
+                }
+
+                if (contactEmail) {
+                    contactEmail.addEventListener('input', () => {
+                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (emailRegex.test(contactEmail.value.trim())) {
+                            if (emailError) emailError.classList.add('hidden');
+                            contactEmail.classList.remove('border-error');
+                        }
+                    });
+                }
+
+                if (contactMessage) {
+                    contactMessage.addEventListener('input', () => {
+                        if (contactMessage.value.trim() !== '') {
+                            if (messageError) messageError.classList.add('hidden');
+                            contactMessage.classList.remove('border-error');
+                        }
+                    });
+                }
+
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    let isValid = true;
+
+                    const nameVal = contactName ? contactName.value.trim() : '';
+                    const emailVal = contactEmail ? contactEmail.value.trim() : '';
+                    const messageVal = contactMessage ? contactMessage.value.trim() : '';
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                    // Reset errors
+                    if (nameError) nameError.classList.add('hidden');
+                    if (emailError) emailError.classList.add('hidden');
+                    if (messageError) messageError.classList.add('hidden');
+                    if (contactName) contactName.classList.remove('border-error');
+                    if (contactEmail) contactEmail.classList.remove('border-error');
+                    if (contactMessage) contactMessage.classList.remove('border-error');
+                    if (formStatus) formStatus.classList.add('hidden');
+
+                    // Validate Name
+                    if (!nameVal) {
+                        if (nameError) nameError.classList.remove('hidden');
+                        if (contactName) contactName.classList.add('border-error');
+                        isValid = false;
+                    }
+
+                    // Validate Email
+                    if (!emailVal || !emailRegex.test(emailVal)) {
+                        if (emailError) emailError.classList.remove('hidden');
+                        if (contactEmail) contactEmail.classList.add('border-error');
+                        isValid = false;
+                    }
+
+                    // Validate Message
+                    if (!messageVal) {
+                        if (messageError) messageError.classList.remove('hidden');
+                        if (contactMessage) contactMessage.classList.add('border-error');
+                        isValid = false;
+                    }
+
+                    if (!isValid) return;
+
+                    // Frontend-only contact confirmation (no fake backend claimed)
+                    const mailtoUrl = `mailto:anantvikramsingh00@gmail.com?subject=${encodeURIComponent('Portfolio Contact from ' + nameVal)}&body=${encodeURIComponent('Name: ' + nameVal + '\nEmail: ' + emailVal + '\n\nMessage:\n' + messageVal)}`;
+                    
+                    if (formStatus) {
+                        formStatus.className = 'p-4 rounded-xl border border-primary/30 bg-primary/10 text-on-surface flex flex-col gap-3 font-body-md text-sm';
+                        formStatus.innerHTML = `
+                            <div class="flex items-start gap-2.5">
+                                <span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span>
+                                <div>
+                                    <p class="font-semibold text-primary mb-1">Thank you, ${nameVal}!</p>
+                                    <p class="text-on-surface-variant text-xs leading-relaxed">
+                                        Your details have been validated. Direct messaging is currently in frontend mode. Click below to launch your email app and send your message directly to <strong class="text-on-surface">anantvikramsingh00@gmail.com</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="${mailtoUrl}" class="self-start inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-on-primary font-label-caps text-xs tracking-wider hover:bg-primary-fixed transition-colors active:scale-95 shadow-sm mt-1">
+                                <span>Compose in Email App</span>
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </a>
+                        `;
+                        formStatus.classList.remove('hidden');
+                    }
+                });
+            }
+
+            // Initial load populate
+            updateAboutSection(0, true);
+
+            // --- SCROLLSPY LOGIC FOR DESKTOP NAVBAR & MOBILE DRAWER ---
+            const spySections = document.querySelectorAll('main section[id]');
+            const desktopNavLinks = document.querySelectorAll('#desktop-nav a');
+            const mobileDrawerNavLinks = document.querySelectorAll('#mobile-drawer nav a');
+
+            function updateScrollSpy() {
+                const scrollPos = (window.pageYOffset || document.documentElement.scrollTop) + 160;
+                let activeId = 'home';
+
+                spySections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        activeId = section.getAttribute('id');
+                    }
+                });
+
+                // If scrolled to near bottom of page, activate contact
+                if ((window.innerHeight + window.pageYOffset) >= document.documentElement.scrollHeight - 70) {
+                    activeId = 'contact';
+                }
+
+                // Update Desktop Nav
+                desktopNavLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === `#${activeId}`) {
+                        link.classList.add('text-primary', 'font-bold', 'nav-active');
+                        link.classList.remove('text-on-surface-variant');
+                    } else {
+                        link.classList.remove('text-primary', 'font-bold', 'nav-active');
+                        link.classList.add('text-on-surface-variant');
+                    }
+                });
+
+                // Update Mobile Drawer
+                mobileDrawerNavLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === `#${activeId}`) {
+                        link.classList.add('bg-primary-container', 'text-on-primary-container');
+                        link.classList.remove('text-on-surface-variant');
+                    } else {
+                        link.classList.remove('bg-primary-container', 'text-on-primary-container');
+                        link.classList.add('text-on-surface-variant');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateScrollSpy, { passive: true });
+            updateScrollSpy();
+
+            // ==========================================
+            // TECH BACKGROUND ANIMATION (CANVAS + PARTICLES + MESH WAVES)
+            // ==========================================
+            (function initTechBackground() {
+                const canvas = document.getElementById('bg-canvas');
+                if (!canvas) return;
+
+                const ctx = canvas.getContext('2d', { alpha: true });
+                if (!ctx) return;
+
+                // Accessibility: Check prefers-reduced-motion
+                const mediaReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+                let isReducedMotion = mediaReducedMotion.matches;
+                mediaReducedMotion.addEventListener('change', (e) => {
+                    isReducedMotion = e.matches;
+                    if (isReducedMotion && animId) {
+                        cancelAnimationFrame(animId);
+                        animId = null;
+                        drawFrame(0);
+                    } else if (!isReducedMotion && !animId) {
+                        animId = requestAnimationFrame(renderLoop);
+                    }
+                });
+
+                let width = 0;
+                let height = 0;
+                let dpr = 1;
+                let particles = [];
+                let animId = null;
+
+                // Mouse interaction (subtle)
+                const mouse = {
+                    x: -9999,
+                    y: -9999,
+                    targetX: -9999,
+                    targetY: -9999,
+                    active: false
+                };
+
+                window.addEventListener('mousemove', (e) => {
+                    mouse.targetX = e.clientX;
+                    mouse.targetY = e.clientY;
+                    mouse.active = true;
+                }, { passive: true });
+
+                window.addEventListener('mouseleave', () => {
+                    mouse.active = false;
+                    mouse.targetX = -9999;
+                    mouse.targetY = -9999;
+                }, { passive: true });
+
+                function getParams() {
+                    const w = window.innerWidth;
+                    if (w < 640) {
+                        return {
+                            count: 24,
+                            maxDist: 85,
+                            speed: 0.22,
+                            waveCount: 2,
+                            waveAmp: 18
+                        };
+                    } else if (w < 1024) {
+                        return {
+                            count: 44,
+                            maxDist: 115,
+                            speed: 0.28,
+                            waveCount: 2,
+                            waveAmp: 24
+                        };
+                    } else {
+                        return {
+                            count: 70,
+                            maxDist: 140,
+                            speed: 0.35,
+                            waveCount: 3,
+                            waveAmp: 30
+                        };
+                    }
+                }
+
+                class Particle {
+                    constructor() {
+                        this.init();
+                    }
+
+                    init(randomY = true) {
+                        this.x = Math.random() * width;
+                        this.y = randomY ? Math.random() * height : height + 10;
+                        
+                        const params = getParams();
+                        const angle = Math.random() * Math.PI * 2;
+                        const spd = (0.08 + Math.random() * 0.18) * params.speed;
+                        
+                        this.vx = Math.cos(angle) * spd;
+                        this.vy = Math.sin(angle) * spd - 0.04; // subtle upward drift
+                        
+                        this.radius = 0.8 + Math.random() * 1.5; // 0.8px to 2.3px
+                        this.baseAlpha = 0.22 + Math.random() * 0.45;
+                        this.pulseSpeed = 0.008 + Math.random() * 0.015;
+                        this.pulseOffset = Math.random() * Math.PI * 2;
+                        this.currentAlpha = this.baseAlpha;
+                    }
+
+                    update(time) {
+                        this.x += this.vx;
+                        this.y += this.vy;
+
+                        // Wrap edges with comfortable buffer
+                        const pad = 30;
+                        if (this.x < -pad) this.x = width + pad;
+                        if (this.x > width + pad) this.x = -pad;
+                        if (this.y < -pad) this.y = height + pad;
+                        if (this.y > height + pad) this.y = -pad;
+
+                        // Subtle breathing opacity
+                        this.currentAlpha = this.baseAlpha * (0.8 + 0.2 * Math.sin(time * this.pulseSpeed + this.pulseOffset));
+                    }
+
+                    draw() {
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                        ctx.fillStyle = `rgba(227, 190, 184, ${this.currentAlpha})`;
+                        ctx.fill();
+                    }
+                }
+
+                function setupCanvas() {
+                    dpr = Math.min(window.devicePixelRatio || 1, 2);
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+
+                    canvas.width = Math.floor(width * dpr);
+                    canvas.height = Math.floor(height * dpr);
+                    canvas.style.width = width + 'px';
+                    canvas.style.height = height + 'px';
+
+                    ctx.setTransform(1, 0, 0, 1, 0, 0);
+                    ctx.scale(dpr, dpr);
+
+                    const params = getParams();
+                    particles = [];
+                    for (let i = 0; i < params.count; i++) {
+                        particles.push(new Particle());
+                    }
+                }
+
+                // Draw very subtle futuristic wave ribbons in the far background
+                function drawWaves(time) {
+                    const params = getParams();
+                    const waveCount = params.waveCount;
+                    const baseAmp = params.waveAmp;
+
+                    for (let w = 0; w < waveCount; w++) {
+                        ctx.beginPath();
+                        const phase = w * (Math.PI / 2.5);
+                        const speed = 0.0003 + w * 0.00015;
+                        const baseY = height * (0.35 + w * 0.25);
+                        const alpha = 0.02 + w * 0.012; // 2% to 3.2% opacity
+
+                        ctx.strokeStyle = `rgba(227, 190, 184, ${alpha})`;
+                        ctx.lineWidth = 1;
+
+                        const step = Math.max(16, Math.floor(width / 60));
+                        for (let x = 0; x <= width + step; x += step) {
+                            const y = baseY + 
+                                Math.sin(x * 0.0018 + time * speed + phase) * baseAmp +
+                                Math.cos(x * 0.003 + time * (speed * 1.3) + phase) * (baseAmp * 0.5);
+                            
+                            if (x === 0) {
+                                ctx.moveTo(x, y);
+                            } else {
+                                ctx.lineTo(x, y);
+                            }
+                        }
+                        ctx.stroke();
+                    }
+                }
+
+                // Draw connected digital constellation network
+                function drawNetwork() {
+                    const params = getParams();
+                    const maxDist = params.maxDist;
+                    const maxDistSq = maxDist * maxDist;
+                    const len = particles.length;
+
+                    for (let i = 0; i < len; i++) {
+                        const p1 = particles[i];
+                        for (let j = i + 1; j < len; j++) {
+                            const p2 = particles[j];
+                            const dx = p1.x - p2.x;
+                            const dy = p1.y - p2.y;
+                            const distSq = dx * dx + dy * dy;
+
+                            if (distSq < maxDistSq) {
+                                const dist = Math.sqrt(distSq);
+                                const factor = 1 - (dist / maxDist);
+                                const lineAlpha = factor * 0.14 * ((p1.currentAlpha + p2.currentAlpha) / 2);
+
+                                ctx.beginPath();
+                                ctx.moveTo(p1.x, p1.y);
+                                ctx.lineTo(p2.x, p2.y);
+                                ctx.strokeStyle = `rgba(227, 190, 184, ${lineAlpha})`;
+                                ctx.lineWidth = 0.85;
+                                ctx.stroke();
+                            }
+                        }
+
+                        // Subtle connection to mouse cursor
+                        if (mouse.active) {
+                            const mdx = p1.x - mouse.x;
+                            const mdy = p1.y - mouse.y;
+                            const mDistSq = mdx * mdx + mdy * mdy;
+                            const mouseMaxDist = 125;
+                            const mouseMaxDistSq = mouseMaxDist * mouseMaxDist;
+
+                            if (mDistSq < mouseMaxDistSq) {
+                                const mDist = Math.sqrt(mDistSq);
+                                const mFactor = 1 - (mDist / mouseMaxDist);
+                                const mLineAlpha = mFactor * 0.22;
+
+                                ctx.beginPath();
+                                ctx.moveTo(p1.x, p1.y);
+                                ctx.lineTo(mouse.x, mouse.y);
+                                ctx.strokeStyle = `rgba(227, 190, 184, ${mLineAlpha})`;
+                                ctx.lineWidth = 0.9;
+                                ctx.stroke();
+                            }
+                        }
+                    }
+                }
+
+                function drawFrame(time) {
+                    ctx.clearRect(0, 0, width, height);
+
+                    // 1. Far background wave ribbons
+                    drawWaves(time);
+
+                    // 2. Connected digital constellation network
+                    drawNetwork();
+
+                    // 3. Floating particles
+                    for (let i = 0; i < particles.length; i++) {
+                        const p = particles[i];
+                        p.update(time);
+                        p.draw();
+                    }
+                }
+
+                function renderLoop(now) {
+                    // Smooth mouse interpolation
+                    if (mouse.active) {
+                        mouse.x += (mouse.targetX - mouse.x) * 0.15;
+                        mouse.y += (mouse.targetY - mouse.y) * 0.15;
+                    }
+
+                    drawFrame(now);
+
+                    if (!isReducedMotion) {
+                        animId = requestAnimationFrame(renderLoop);
+                    }
+                }
+
+                // Debounced window resize handler
+                let resizeTimeout = null;
+                window.addEventListener('resize', () => {
+                    clearTimeout(resizeTimeout);
+                    resizeTimeout = setTimeout(() => {
+                        setupCanvas();
+                        if (isReducedMotion) drawFrame(0);
+                    }, 120);
+                }, { passive: true });
+
+                // Pause when document is hidden (background tab)
+                document.addEventListener('visibilitychange', () => {
+                    if (document.hidden) {
+                        if (animId) {
+                            cancelAnimationFrame(animId);
+                            animId = null;
+                        }
+                    } else {
+                        if (!isReducedMotion && !animId) {
+                            animId = requestAnimationFrame(renderLoop);
+                        }
+                    }
+                });
+
+                // Initialize and run
+                setupCanvas();
+                if (isReducedMotion) {
+                    drawFrame(0);
+                } else {
+                    animId = requestAnimationFrame(renderLoop);
+                }
+            })();
+        });
+    </script>
+</body></html>
